@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+    <link rel="stylesheet" href="AsianPastaCSS/asianpasta.css">
+    <script defer src="/JSasianpasta/asianpasta.js"></script>
+    <title> Asian Thai Pasta Salad</title>
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<!---------------------------------------NAVBAR-------------------------------------------------->
+
+<nav>
+
+    <div class="Nav-Container" id="nav-container">
+
+        <div class="Nav-Wrapper">
+
+            <div class="Nav-Left-Side">
+                <h1>Food Recipe Supply</h1>
+            </div>
+
+            <div class="Nav-Right-Side">
+               <button onclick="Welcome()" type="button">Home</button>
+               <button onclick="About()" type="button">About</button>
+               <button onclick="Learn()" type="button">Learn</button>
+               <button onclick="clearCookies()" type="button">Clear Data</button>
+               <button onclick="Logout()" type="button">Exit</button>
+                 
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------POP UP CHAT SECTION----------------------------------------------------->
+
+<button onclick="openChat()" class="Open-Chat-Btn" id="open-chat-btn">Thai Pasta Salad ?</button>
+<div class="Chat-Popup" id="chat-popup">
+    <form class="form-chat-popup" id="form-chat-popup">
+        <h1>Feedback</h1>
+        <label>Message:</label>
+        <textarea id="text-message" placeholder="Feedback on What You've Learned..." name="text-mg" required></textarea>
+        <button onclick="submitChat(event)" class="btn">Send</button>
+        <button onclick="closeChat()" class="btn close">Close</button>
+
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------CONTENT----------------------------------------------------->
+
+
+
+
+<div class="Asian-Thai-Pasta-Banner-Container">
+
+
+    <div class="Asian-Noodle-Wrapper">
+
+        <div class="asian-noodle-header">
+            <div><h1>Asian Thai Pasta Salad Recipe </h1></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-----------------------------------------CONTENT----------------------------------------------------->
+
+<div class="Main-Asian-Noodle-Wrapper">
+
+
+    <div class="Container-One">
+        <div class="asian-noodle-image">
+            <img src="/images/Thai Pasta Salad.jpg"></div>
+        <div class="asian-noodle-content">
+            <div class="asian-noodle-paragraphs"><p>Asian Thai Pasta Salad</p></div>
+            <div class="asian-noodle-paragraphs"><p>Thai pasta salad typically
+                 features a vibrant combination of flavors, including the tangy zest of lime,
+                  the savory depth of soy sauce or fish sauce, the sweetness of sugar, 
+                  and the heat from chili peppers. This harmonious 
+                blend of sweet, salty, sour, and spicy elements creates a deliciously balanced and addictive taste.</p></div>
+            <div class="asian-noodle-paragraphs"><p>The salad often includes fresh 
+                vegetables such as bell peppers, carrots, cucumbers, and herbs like cilantro and mint. 
+                These ingredients not only add a refreshing crunch and aroma but also contribute to the overall healthfulness of the dish.</p></div>
+                <div class="asian-noodle-paragraphs">
+                    <p>The combination of tender noodles, crisp vegetables, 
+                        and crunchy toppings 
+                        like peanuts or sesame seeds provides a satisfying contrast in
+                         textures that enhances the eating experience.</p>
+                </div>
+                <div class="asian-noodle-paragraphs">
+                    <p>Thai pasta salad is often lighter and healthier than many other pasta dishes,
+                     as it incorporates a variety of fresh vegetables and lean proteins, making it 
+                     a nutritious option that still feels indulgent.</p>
+                </div>
+                <div class="asian-noodle-paragraphs">
+                    <p>The salad can be customized to suit various dietary preferences and restrictions.
+                         It can be made with different types of noodles, such as rice noodles for a gluten-free option,
+                     and can include proteins like tofu, chicken, or shrimp, catering to vegetarians, vegans, and meat-eaters alike</p>
+                </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="Container-Two">
+
+            <div class="asian-noodle-wrapper">
+
+                <div class="asian-noodle-title"><div class="asian-noodle-title-name">Thai Pasta Salad</div></div>
+                <div class="asian-noodle-cuisines"><div class="cusine-text">Cuisine:<span class="asian-noodle-cuisines-name">Thai, Asian </span></div></div>
+            </div>
+
+
+
+
+        <div class="asian-noodle-benefits"><h3>Benefits of Asian Thai Pasta Salad</h3></div>
+        <div class="asian-noodle-balance">
+            <div><h3>Nutritional Balance:</h3></div>
+        </div>
+
+        <div class="asian-noodle-list">
+            <ul>
+                <li><span style="color:coral; font-size: 21px;">Fresh Vegetables:</span> Packed with vitamins, minerals, and antioxidants from ingredients like bell peppers, carrots, cucumbers, and herbs.</li>
+                <li><span style="color:coral; font-size: 21px;">Protein:</span>  Often includes lean proteins such as tofu, chicken, or shrimp, contributing to muscle repair and growth</li>
+                <li> <span style="color:coral; font-size: 21px;">Healthy Fats:</span> Includes healthy fats from ingredients like peanuts, sesame seeds, or oils used in the dressing, which are essential for brain health and hormone production.</li>
+            </ul>
+        </div>
+
+        <div class="asian-noodle-balance-two">
+            <div><h3>Versatile and Customizable:</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-two">
+            <ul>
+                <li>Easily adaptable to various dietary preferences and restrictions, including gluten-free, vegetarian, and vegan options.</li>
+            </ul>
+        </div>
+
+
+        <div class="asian-noodle-balance-three">
+            <div><h3>Flavorful and Satisfying</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-three">
+            <ul>
+                <li>Combines sweet, salty, sour, and spicy flavors, creating a delicious and complex taste that can satisfy a variety of cravings.</li>
+            </ul>
+        </div>
+
+
+        <div class="asian-noodle-balance-four">
+            <div><h3>Low-Calorie and Low-Fat:</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-four">
+            <ul>
+                <li>Compared to many other pasta dishes, Thai pasta salad is often lighter, with a focus on fresh, low-calorie ingredients.</li>           
+             </ul>
+        </div>
+
+
+
+        <div class="asian-noodle-balance-five">
+            <div><h3>Rich in Fiber:</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-five">
+            <ul>
+                <li>The inclusion of fresh vegetables adds fiber to the diet, promoting digestive health and helping to maintain a healthy weight.</li>
+            </ul>
+        </div>
+
+
+
+        <div class="asian-noodle-balance-six">
+            <div><h3>Antioxidant-Rich:</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-six">
+            <ul>
+                <li>Ingredients like fresh vegetables and herbs provide antioxidants that help combat oxidative stress and inflammation in the body.</li>
+                
+            </ul>
+        </div>
+
+
+
+        <div class="asian-noodle-balance-seven">
+            <div><h3>Hydration</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-seven">
+            <ul>
+                <li>The high water content in fresh vegetables helps maintain hydration and supports overall bodily functions.</li>
+            </ul>
+        </div>
+
+
+
+        <div class="asian-noodle-balance-eight">
+            <div><h3>Balanced Meal:</h3></div>
+        </div>
+
+        <div class="asian-noodle-list-eight">
+            <ul>
+                <li>Provides a good mix of carbohydrates, proteins, and fats, making it a well-rounded meal that can keep you full and satisfied.</li>
+            </ul>
+        </div>
+
+
+
+
+        
+            <div class="asian-noodle-instructions-wrapper">
+                <div class="an-instructions">Instructions</div>
+            </div>
+
+                <div class="an-instructions-wrapper">
+                    <div class="an-instructions-content">
+                        <div>
+                            <p>Step 1: </p>
+                            <span class="an-instructions-text">Cook pasta according to package instructions. During the last minute, add in the broccoli.In the meantime, you can cook the vegetables and prepare the dressing.
+                            </span>  
+                        </div>
+                        <div>
+                            <p>Step 2: </p>
+                            <span class="an-instructions-text">Heat olive oil in small non-stick skillet, saut onions until slightly soften.
+                            </span>
+                        </div>
+
+                        <div>
+                            <p>Step 3: </p>
+                            <span class="an-instructions-text">Add in garlic and continue to saut until fragrant. add in sweet peppers and cook until slightly softened</span>
+                        </div>
+
+                        <div>
+                            <p>Step 4: </p>
+                            <span class="an-instructions-text">"Remove from heat, add in remaining ingredients to finish making the sauce.
+                            </span>   
+                        </div>
+                        <div>
+                            <p>Step 5: </p>
+                            <span class="an-instructions-text">Add salt and pepper to taste.When the pasta and broccoli is ready, add them to the skillet and stir well. Stir in cilantro leaves</span>
+                        </div>
+                        <div>
+                            <p>Step 6: </p>
+                            <span class="an-instructions-text">Served at room temperature or chilled.
+                            </span>
+                        </div>
+                        <div>
+                            <p class="step-seven">Step 7: </p>
+                            <span class="an-instructions-seven">Add mushrooms to bowl with vegetables</span>
+                        </div>
+                        <div>
+                            <p class="step-eight">Step 8: </p>
+                            <span class="an-instructions-eight">Add vinegar, ginger and hoisin sauce to pan and warm through.</span>
+                        </div>
+                        <div>
+                            <p class="step-nine">Step 9: </p>
+                            <span class="an-instructions-nine">Pour over vegetables</span> 
+                        </div>
+                        <div>
+                            <p  class="step-ten">Step 10: </p>
+                            <span class="an-instructions-ten">"Add noodles and toss.</span>
+                        </div>
+                        <div>
+                            <p  class="step-eleven">Step 11: </p>  
+                            <span class="an-instructions-eleven">Serve these noodles with a packaged miso soup mix.</span>
+                        </div>
+                                                       
+                    </div>
+
+                    <div>
+                    </div>
+
+                </div>
+
+  
+               
+            <div class="asian-noodle-ingredients-wrapper">
+                <div class="an-ingredients">Ingredients</div>
+                <span class="an-ingredients-one">2 cups broccoli, cut into mini florets </span>
+                <span class="an-ingredients-two">1 teaspoon hot chili sauce</span>
+                <span class="an-ingredients-three">1/2 cup – 1 cilantro leaves, chopped</span>
+                <span class="an-ingredients-four">1 tablespoon fish sauce</span>
+                <span class="an-ingredients-five">2 tablespoons hoisin sauce </span>
+                <span class="an-ingredients-six">2 tablespoons lemon juice</span>
+                <span class="an-ingredients-seven">1 cup onions, diced</span>
+                <span class="an-ingredients-eight">1 cup sweet peppers, diced </span>
+                <span class="an-ingredients-nine">2 tablespoons soy sauce</span>
+                <span class="an-ingredients-ten">3 tablespoons rice wine vinegar</span>
+                <span class="an-ingredients-eleven">6 ounces whole wheat spaghetti </span>
+                <span class="an-ingredients-12"></span>
+
+            </div>
+      
+
+
+
+
+
+        <div class="Asian-Noodle-Nutrition-Wrapper">
+            <div>Nutrition</div>
+        </div>
+
+        <div class="asian-noodle-nutrition-facts-wrapper">
+            <p style="color:coral">Calories:</p><span>558</span>
+            <p style="color:coral">Protein: </p> <span>20g</span>
+            <p style="color:coral">Fats: </p>   <span>16g</span>
+            <p style="color:coral">Carbs: </p>   <span>86g</span> 
+            <p style="color:coral">Fiber: </p>   <span>6g</span>
+        </div>
+
+
+        <div class="Asian-Noodle-DishType-Wrapper">
+            <div>Dish Type</div>
+        </div>
+
+
+        <div class="asian-noodle-dish-type-wrapper">
+            <p>- Side Dish</p>
+            <p>- Lunch</p>
+            <p>- Main Course</p>
+            <p>- Main Dish</p>
+            <p>- Dinner</p>
+        </div>
+
+
+        <div class="Asian-Noodle-Diets-Wrapper">
+            <div>Diets</div>
+        </div>
+
+
+        <div class="asian-noodle-diets-type-wrapper">
+           <p>- Dairy Free</p>
+           <p>- Pescatarian</p>
+
+
+        </div>
+
+        <div class="asian-noodle-facts-wrapper">
+            <h1>Facts</h1>
+         </div>
+
+         <div class="asian-noodle-facts-list-wrapper">
+            <p>Servings</p> <span>2</span>
+            <p>Minutes</p>  <span>45</span>
+            <p>HealthScore</p> <span>63</span>
+         </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="Container-Three">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------FOOTER------------------------------------------------------>
+
+
+
+<footer id="footer-wrapper">
+
+    <div class="Footer-Wrapper">
+
+        <div class="Footer-Home">
+            <button disabled>Home</button>
+        </div>
+
+
+        <div class="Footer-About">
+            <button disabled>About</button>
+        </div>
+
+        
+
+
+        <div class="Footer-Learn">
+            <button disabled>Learn</button>
+        </div>
+
+    </div>
+
+
+    <div class="Footer-Wrapper-Two">
+        
+        <div class="Footer-Content">
+            <div>The content in this website is not professional advice from any Registered Dietitian and it’s intended for informational and educational purposes only.</div>
+        </div>
+
+        
+    </div>
+
+
+    <div class="Footer-Wrapper-Three">
+
+        <div class="Footer-Copyright">
+            <p><span>&#169;</span>2024 Food Recipe Supply </p>
+        </div>
+
+        <div class="Footer-Social-Media">
+            <div><img src="/images/twitter.png">
+                <img src="/images/pintrest.png">
+                <img src="/images/instagraam.png">
+                <img src="/images/mete.png">
+        </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,913 @@
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --white: white;
+    --skyBlue: skyBlue;
+    --green: green;
+    --dodgerBlue: dodgerblue;
+    --seaGreen: seagreen;
+    --black: black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+ 
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------NAVBAR---------------------------------------------------------*/
+
+
+.Nav-Container {
+    width: 100%;
+    overflow: hidden;
+    background-color:black;
+    visibility: visible;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    
+}
+
+
+.Nav-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.Nav-Wrapper .Nav-Left-Side {
+    color:white;
+}
+
+
+.Nav-Wrapper button {
+    text-decoration: none;
+    margin:0px 10px;
+    color:white;
+    font-weight:bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding:0.8em 1em;
+    border:none;
+    background:none;
+    outline:none
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------- POP UP CHAT  CONTENT---------------------------------------------------------*/
+
+
+
+.Open-Chat-Btn {
+    display: block;
+    position: fixed;
+    bottom:0;
+    right:0;
+    width: 150px;
+    cursor: pointer;
+    color:whitesmoke;
+    background-color:dodgerblue;
+    border:none;
+    outline:none;
+    padding:0.8em 2em;
+}
+
+
+.Chat-Popup {
+    position: fixed;
+    display: none;
+    bottom:0;
+    right:15px;
+    border: 3px solid black;
+    z-index: 99;
+}
+
+.form-chat-popup {
+    max-width: 300px;
+    padding:10px;
+    background-color:white;
+}
+.form-chat-popup label {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.form-chat-popup textarea {
+    width: 100%;
+    min-height: 90px;
+    background:darkgrey;
+    resize: none;
+    padding:1em;
+    border:none;
+    margin:5px 0px 25px 0px
+}
+
+.form-chat-popup textarea:focus {
+    background:lightgrey;
+    outline:none;
+}
+
+
+.form-chat-popup .btn {
+    background-color:lightgreen;
+    color:white;
+    padding:0.8em 2em;
+    cursor: pointer;
+    width: 100%;
+    border:none;
+    outline:none;
+    margin-bottom: 10px;
+}
+
+.form-chat-popup .close {
+    background-color:coral
+}
+
+
+.form-chat-popup button {
+    opacity: 0.9;
+}
+
+.form-chat-popup button:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------   CONTENT---------------------------------------------------------*/
+
+
+
+.Mac-Cheese-Alton-Brown-Banner-Container {
+    overflow: hidden;
+    width: 100%;
+    background-color:rgba(211, 211, 211, 0.593);
+    height: 210px;
+}
+
+
+
+.Mac-Cheese-Alton-Brown-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+
+.asian-noodle-header {
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+.Main-Asian-Noodle-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1200px;
+    margin-block: 50px;
+}
+
+
+
+.Container-One {
+    height: 610px;
+    
+}
+
+.asian-noodle-image {
+    border-radius:20px;
+    border:3px solid whitesmoke;
+    max-width:460px;
+
+
+}
+
+.asian-noodle-image img {
+    height: 210px;
+    width: 460px;
+    object-fit: cover;
+    border-radius:20px;
+}
+
+
+.asian-noodle-content {
+    width: 460px;
+}
+
+.asian-noodle-paragraphs {
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: none;
+
+}
+
+
+
+
+
+
+
+
+.Container-Two {
+    height: 610px;
+    
+}
+
+.asian-noodle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background:rgba(245, 245, 245, 0.32);
+    border-radius:20px;
+    height: 200px;
+    width: 520px;
+    margin:0 auto;
+    margin-top: 45px;
+}
+
+
+.asian-noodle-title {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rebeccapurple;
+    margin: 0 auto;
+  }
+
+
+  .cusine-text {
+    font-size: 20px;
+    color:coral
+    
+  }
+
+ .asian-noodle-cuisines-name {
+    font-size: 23px;
+    color:seagreen;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+
+
+
+
+
+.asian-noodle-benefits {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 20px;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+
+
+.asian-noodle-balance {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: Abel;
+    width: 650px;
+    color:black;
+    margin-left: 140px;
+}
+
+
+.asian-noodle-balance-two {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-two {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    color:black;
+    margin-left: 140px;
+}
+
+
+
+.asian-noodle-balance-three {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-three {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    margin-left: 140px;
+    color:black
+}
+
+
+.asian-noodle-balance-four {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-four {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    margin-left: 140px;
+    color:black
+}
+
+
+
+
+.asian-noodle-balance-five {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-five {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    color:black;
+    margin-left: 140px;
+
+}
+
+
+
+
+
+
+.asian-noodle-balance-six {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-six {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    color:black;
+    margin-left: 140px;
+}
+
+
+
+
+
+
+.asian-noodle-balance-seven {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-seven {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    color:black;
+    margin-left: 140px;
+
+
+}
+
+
+
+.asian-noodle-balance-eight {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:seagreen
+
+}
+
+
+.asian-noodle-list-eight {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: Abel;
+    width: 690px;
+    color:black;
+    margin-left: 140px;
+
+}
+
+
+
+
+.an-instructions-eight,
+.an-instructions-nine,
+.an-instructions-ten,
+.an-instructions-eleven,
+.step-seven,
+.step-eight,
+.step-nine,
+.step-ten,
+.step-eleven {
+    visibility: visible;
+}
+
+
+
+.asian-noodle-instructions-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    text-align: center;
+    margin:0 auto;
+    margin-left: 0px;
+    margin-top: 50px;
+
+}
+
+
+.an-instructions {
+    color:seagreen;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+
+.an-instructions-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    margin-left: 30px;
+    gap:50px;
+    text-align: center;
+    
+}
+
+.an-instructions-wrapper p {
+    color:coral;
+    font-family: "Cormorant SC", serif;
+    font-size: 20px;
+
+
+}
+
+.an-instructions-wrapper .an-instructions-text {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.asian-noodle-ingredients-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+
+
+.an-ingredients {
+    font-size: 22px;
+    color:seagreen;
+    font-weight: bold;
+}
+
+
+.asian-noodle-ingredients-wrapper span {
+    color:coral;
+    font-size: 15px;
+}
+
+
+
+
+
+
+.Asian-Noodle-Nutrition-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:seagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-top: -70px;
+   
+}
+
+
+.asian-noodle-nutrition-facts-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:20px;
+    font-size: 23px;
+    font-family: "Cormorant SC", serif;
+    margin-top: 30px;
+
+
+}
+
+
+
+.Asian-Noodle-DishType-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:seagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 11px;
+    font-size: 23px;
+}
+
+
+.asian-noodle-dish-type-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:coral;
+    gap:30px;
+    font-size: 23px;
+    margin-top: 30px;
+    font-family: "Cormorant SC", serif;
+}
+
+
+
+
+.Asian-Noodle-Diets-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:seagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-top: 50px;
+}
+
+
+
+
+.asian-noodle-diets-type-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:coral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap:30px;
+    font-size: 23px;
+    margin-top: 30px;
+    font-family: "Cormorant SC", serif;
+}
+
+
+
+.asian-noodle-facts-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 13px;
+    color:seagreen;
+    font-weight: bold;
+    font-family: "Cormorant SC", serif;
+    
+
+}
+
+
+
+.asian-noodle-facts-list-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:45px
+}
+
+
+.asian-noodle-facts-list-wrapper p {
+    color:coral;
+    font-size: 20px;
+}
+
+.asian-noodle-facts-list-wrapper span {
+    color:seagreen;
+    font-size: 18px;
+}
+
+
+
+
+
+.Container-Three {
+    flex: 0 0 3400px
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------FOOTER ------------------------------------------*/
+
+
+footer {
+    position: relative;
+    bottom:0;
+    background-color:lightgrey;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding:3em;
+    z-index: -3;
+    margin-block: 0px;
+    visibility: visible; 
+}
+
+
+
+.Footer-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+.Footer-Wrapper button {
+    color:white;
+    font-weight: bold;
+    padding:1em 3em;
+    cursor: pointer;
+    outline:none;
+    border:none;
+    background:none;
+    border-radius:20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+.Footer-Wrapper-Two {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 20px 3px;
+    margin:0 auto;
+    
+}
+
+.Footer-Content {
+    width: 880px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 0.8rem;
+    border:2px solid grey;
+    padding:1em;
+    text-align: center;
+    
+}
+
+.Footer-ContactUs {
+    width: 150px;
+    color:whitesmoke;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+.Footer-ContactUs img {
+    object-fit: contain;
+    width: 20px;
+}
+
+
+
+
+.Footer-Wrapper-Three {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:0 auto;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.Footer-Copyright {
+    color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-left: -210px;
+    margin-top: 30px;
+}
+
+.Footer-Social-Media {
+    margin-top:30px;
+    margin-right: -90px;
+}
+
+.Footer-Social-Media img {
+    object-fit: contain;
+    width: 30px;
+}
+
+
+
+
+

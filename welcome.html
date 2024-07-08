@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+
+    <link rel="stylesheet" href="/welcomeCSS/welcome.css">
+    <script defer src="/welcomejs/welcome.js"></script>
+
+
+
+    
+    <title>Home</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<!------------------------------NAVBAR ------------------------------------------------->
+
+        
+    <nav>
+
+        <div class="Nav-Container" id="nav-container">
+
+            <div class="Nav-Wrapper">
+
+                <div class="Nav-Left-Side">
+                    <h1>Food Recipe  Supply</h1>
+                </div>
+
+                <div class="Nav-Right-Side">
+                   <button type="button">Home</button>
+                   <button onclick="About()" type="button">About</button>
+                   <button onclick="Learn()" type="button">Learn</button>
+                   <button onclick="clearCookies()" type="button">Clear Data</button>
+                   <button id="log-out-btn" type="button">Exit</button>
+                     
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </nav>
+
+
+
+
+
+     <!---------------------------------BANNER CONTENT---------------------------------------------------------------------->
+
+  
+
+<div class="Banner-Container" id="banner-container">
+
+    <div class="Banner-Wrapper">
+
+      
+        <div class="Recipe-Input-Wrapper">
+
+            <div class="Recipe-Headline">
+                <h1>Simple & Delicious Recipes To Grab</h1>
+            </div><br><br>
+
+            <form name="welcomeForm">
+            <div class="Recipe-Input">
+                <input  type="text" class="recipe-input" id="recipe-input" name="recipeInput" placeholder="Search For Recipes" required>
+            </div>
+        </form>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------POP UP MODAL CONTENT------------------------------------------------->
+
+
+    <div class="Modal-Container" id="modal-container">
+
+        <div class="Modal-Wrapper">
+
+            <div class="Modal-Header">
+                <h1>Welcome to Food Recipe Supply</h1>
+            </div>
+
+            <div class="Modal-Smile">
+                <div><img src="/images/modal-smiles.png"></div>
+            </div>
+
+            <div class="Modal-Content">
+                <div class="modal-content-text"> Good nutrition is the cornerstone of a healthy lifestyle, 
+                    providing the energy and nutrients your body needs to thrive. We've crafted a balanced meal plan 
+                    for the week to help you achieve your health goals, featuring a variety of delicious and nutritious foods.
+                     Each day's menu includes fresh fruits, vegetables, lean proteins, and whole grains to ensure you get a well-rounded diet. 
+                     Additionally, our curated recipe research highlights the benefits of each ingredient, 
+                     offering tips on how to prepare meals that are both tasty and nourishing.
+                     Explore our resources to embark on a journey toward better health and wellness!</div>
+            </div>
+
+            <div class="Modal-Close">
+                <div class="Modal-Close-Text">
+                    <button id="modal-close-btn">We Hope Enjoy The Information</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+ <!---------------------------------RECIPE CONTENT---------------------------------------------------------------------->
+
+
+
+ <div class="Container" id="container">
+
+    <div class="Main-Wrapper">
+
+   
+   
+        <div class="Menu-Wrapper">
+
+            <div class="Menu-Header">
+                <h1>Recipes</h1>
+            </div>
+
+            <div class="Menu-List">
+                <a href="">American <img src="/images/americanflag.png"></a>
+                <a href="">Asian <img src="/images/asisflag.png"></a>
+               <a href="">Italian<img src="/images/ItalyFlag.png"></a>
+            </div>
+
+            <div class="Recipe-Benefits">
+                <h1>Benefits</h1>
+            </div>
+
+            <div class="Menu-List-Two">
+                <a href="">Recipes Outlook</a>
+                <a href="">Culture of Recipes</a>
+                <a href="">Recipes Importance</a>
+
+              
+            </div>
+
+         
+        </div>
+
+
+    <div class="Asian-American-Italian-Recipe-Wrapper">
+
+
+        <div class="Flex-Child-Image">
+            <img onclick="AsianNoodlePage()" src="/asiaimages/Asian Noodles.jpg">
+            <div class="Flex-Noodles-Header">Asian Noodles</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="AsianHomeSoup()" src="/asiaimages/Homemade Creamy Ramen Soup.jpg">
+            <div class="Flex-Homemade-Header"> Asian Homemade Creamy Ramen Soup</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="AsianThaiPasta()" src="/asiaimages/Thai Pasta Salad.jpg">
+            <div class="Flex-ThaiPasta-Header"> Asian Thai Pasta Salad</div>
+        </div>
+  
+
+
+        <div class="Flex-Child-Image">
+            <img onclick="MacCheeseAltonBrown()" src="/americanimages/Alton Brown's Baked Macaroni and Cheese.jpg">
+            <div class="Flex-AltonBrown-Header"> American Baked Macaroni (Alton Brown)</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="AmericanNoBakeMacCheese()" src="/americanimages/Awesome! No Bake ~ Macaroni and Cheese.jpg">
+            <div class="Flex-Awesome-Header"> American No Bake - Macaroni and Cheese</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="AmericanBakeMacCheese()" src="/americanimages/Baked Macaroni and Cheese.jpg">
+            <div class="Flex-Baked-Header"> American Baked Macaroni & Cheese</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="AmericanHomeMadeMuffins()" src="/americanimages/Homemade Macaroni and Cheese Muffin Cups.jpg">
+            <div class="Flex-Homemade-Header"> American Homemade Macaroni Muffin Cups</div>
+        </div>
+  
+
+   
+        <div class="Flex-Child-Image">
+            <img onclick="BakedZiti()" src="/Italianimages/Baked Ziti.jpg">
+            <div class="Flex-BakedZiti-Header"> Italian Baked Ziti</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="StylePork()" src="/Italianimages/Bruschetta Style Pork & Pasta.jpg">
+            <div class="Flex-Bruschette-Header"> Italian Bruschetta Style Pork</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="ItalianFagioli()" src="/Italianimages/Pasta e Fagioli (Pasta and Beans).jpg">
+            <div class="Flex-PastaFagioli-Header"> Italian Pasta e Fagioli (Pasta / Beans)</div>
+        </div>
+    
+
+    
+        <div class="Flex-Child-Image">
+            <img onclick="ItalianRicottaCheese()" src="/Italianimages/Pasta Shells With Ricotta Cheese Stuffing.jpg">
+            <div class="Flex-PastaShells-Header"> Italian Pasta Shells with Ricotta Cheese</div>
+        </div>
+        <div class="Flex-Child-Image">
+            <img onclick="ItalianSausage()" src="/Italianimages/Pasta with Peas and Italian Sausage.jpg">
+            <div class="Flex-ItalianSausage-Header"> Italian Pasta with Italian Sausage</div>
+        </div>
+       
+
+
+    </div>
+   
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!----------------------------POP UP CHAT SECTION---------------------------->
+
+<button onclick="openChat()" class="Open-Chat-Btn" id="open-chat-btn">Questions About Recipes</button>
+<div class="Chat-Popup" id="chat-popup">
+    <form class="form-chat-popup" id="form-chat-popup">
+        <h1>Recipe Feedback</h1>
+        <label>Message:</label>
+        <textarea id="text-message" placeholder="Recipe Feedback..." name="text-mg" required></textarea>
+        <button onclick="submitChat(event)" class="btn">Send</button>
+        <button onclick="closeChat()" class="btn close">Close</button>
+
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------RECIPE HISTORY SECTION------------------------------------------------------>
+
+
+
+<div class="Container-Two" id="container-two">
+
+    <div class="Main-Wrapper-Two">
+
+            <div class="Overview-Recipes">
+            <h1>Let's inform you on recipes</h1>
+            </div>
+
+    </div>
+
+</div>
+
+
+
+  
+
+
+
+
+
+
+
+
+<!------------------------------------------WHAT IS A RECIPE SECTION------------------------------------------------------>
+
+
+ <div class="What-Is-Recipe-Container" id="what-is-recipe">
+
+    <div class="Recipe-Important-Wrapper">
+
+        <div class="Recipe-Important">
+            <h1><img src="/images/recipeman.png">What is a Recipe</h1>
+            <div class="Recipe-Important-Text">A recipe for foods is 
+                a detailed set of instructions that guides the preparation and cooking of 
+                a particular dish. It typically includes a list of ingredients with specific measurements, 
+                step-by-step directions on how to combine and cook these ingredients, and sometimes additional tips or variations.
+                 A good recipe provides clear instructions on the techniques and timings needed to achieve the desired outcome, 
+                 ensuring consistency and reliability. Recipes can range from simple, quick meals to complex, gourmet dishes,
+                 and they often include information on serving size, nutritional content, and potential substitutions for ingredients</div>
+        </div>
+
+        <div class="Recipe-Important">
+            <h1><img src="/images/receipemantwo.png">Recipes Are Important</h1>
+            <div class="Recipe-Important-Text" >Recipes are essential for active individuals, 
+                those with dietary restrictions, and budget-conscious shoppers. For active people,
+                 well-crafted recipes ensure balanced nutrition to fuel their lifestyle. Recipes tailored for 
+                 allergies help individuals avoid harmful ingredients while enjoying diverse and delicious meals.
+             Additionally, recipes focused on affordability enable shoppers to create nutritious, tasty dishes without breaking the bank</div>
+        </div>
+
+        <div class="Recipe-Important">
+            <h1><img src="/images/recipemanthree.png">Recipe Culture</h1>
+            <div class="Recipe-Important-Text">American recipes, known for their hearty
+                 and comforting qualities, often feature ingredients that are easily accessible and adaptable, 
+                 making them perfect for weeknight dinners and gatherings. Asian recipes offer a wealth of flavors and health benefits, 
+                 utilizing fresh ingredients and techniques that emphasize balance and nutrition. Italian recipes, celebrated for their
+                  rich and robust flavors, bring the
+                 joy of traditional cooking with an emphasis on high-quality ingredients and time-honored methods, making meals both satisfying and nourishing.</div>
+        </div> 
+
+    </div>
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+<!------------------------------------------RECIPE ARTICLE SECTION------------------------------------------------------>
+
+<div class="Container-Three" id="container-three">
+
+
+        <div class="Recipe-Article-Wrapper">
+
+            <div class="Article-Recipe">
+                <h1>Never miss update on a recipes</h1>
+            </div>
+
+            <div class="Article-Text-Header">
+                <h3>Sign up for our newsletter & get 20% off your first order.</h3>
+            </div>
+
+            <div class="Form-Article">
+                <form onsubmit="submitRecipeNewsLetter(event)">
+                    <input type="text" class="article-input" id="article-input" placeholder="email@example.com" required>
+                    <button onsubmit="submitRecipeNewsLetter(event)" type="submit">Sign Up</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+
+</div>
+
+
+
+
+
+<!------------------------------------------NEWSLETTER POP UP------------------------------------------------------>
+
+
+    <div class="User-Newsletter-Container" id="user-news-container">
+
+
+        <div class="Newsletter-Wrapper">
+
+                <div class="Newsletter-Header">
+                    <h1>THANK YOU FOR SIGNING UP<img src="/images/newslettericon.png"></h1>
+                </div>
+
+                <div class="Newsletter-Tag-Line">
+                    <h3>Check your email for details on your discount</h3>
+                </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------FOOTER------------------------------------------------------>
+
+
+
+    <footer id="footer-wrapper">
+
+        <div class="Footer-Wrapper">
+
+            <div class="Footer-Home">
+                <button disabled>Home</button>
+            </div>
+
+
+            <div class="Footer-About">
+                <button disabled>About</button>
+            </div>
+
+            
+
+
+            <div class="Footer-Learn">
+                <button disabled>Learn</button>
+            </div>
+
+        </div>
+
+
+        <div class="Footer-Wrapper-Two">
+            
+            <div class="Footer-Content">
+                <div>The content in this website is not professional advice from any Registered Dietitian and it’s intended for informational and educational purposes only.</div>
+            </div>
+
+            
+
+        </div>
+
+
+        <div class="Footer-Wrapper-Three">
+
+            <div class="Footer-Copyright">
+                <p><span>&#169;</span>2024 Food Recipe Supply </p>
+            </div>
+
+            <div class="Footer-Social-Media">
+                <div><img src="/images/twitter.png">
+                    <img src="/images/pintrest.png">
+                    <img src="/images/instagraam.png">
+                    <img src="/images/mete.png">
+            </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </footer>
+
+
+  
+    
+    
+</body>
+</html>

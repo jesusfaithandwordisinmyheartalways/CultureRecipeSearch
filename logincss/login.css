@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --white: white;
+    --skyBlue: skyBlue;
+    --green: green;
+    --dodgerBlue: dodgerblue;
+    --seaGreen: seagreen;
+    --black: black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    background:url("/images/banner.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    
+}
+
+
+
+.Form-Login-Container {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+.Wrapper {
+    display: flex;
+    position: relative;
+    top:50px;
+    left: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    height: 510px;
+    background:linear-gradient(orange, white, green);
+    border-radius:10px;
+}
+
+
+
+form input {
+    padding: 0.8em 4em;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    margin:10px 
+}
+
+
+.header-text {
+    color:black;
+    text-align: center;
+    margin-top: -90px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 50px;
+}
+
+
+
+.login-access {
+    color:white;
+    font-weight: bold;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size:32px;
+}
+
+
+form button {
+    margin:0 auto;
+    background:black;
+    color:white;
+    padding:1.3em 7em;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 103px;
+}
+
+
+form button:hover {
+    background:green
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/aboutCSS/about.css">
+    <script defer src="/Aboutjs/about.js"></script>
+
+
+    <title>About</title>
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+<!---------------------------------------NAVBAR-------------------------------------------------->
+
+<nav>
+
+    <div class="Nav-Container" id="nav-container">
+
+        <div class="Nav-Wrapper">
+
+            <div class="Nav-Left-Side">
+                <h1>Food Recipe Supply</h1>
+            </div>
+
+            <div class="Nav-Right-Side">
+               <button onclick="Welcome()" type="button">Home</button>
+               <button type="button">About</button>
+               <button onclick="Learn()" type="button">Learn</button>
+               <button onclick="clearCookies()" type="button">Clear Data</button>
+               <button onclick="Logout()" type="button">Exit</button>
+                 
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</nav>
+
+
+
+
+
+
+<!-----------------------------------------POP UP CHAT SECTION----------------------------------------------------->
+
+<button onclick="openChat()" class="Open-Chat-Btn" id="open-chat-btn">Questions About Recipes</button>
+<div class="Chat-Popup" id="chat-popup">
+    <form class="form-chat-popup" id="form-chat-popup">
+        <h1>Recipe Feedback</h1>
+        <label>Message:</label>
+        <textarea id="text-message" placeholder="Recipe Feedback..." name="text-mg" required></textarea>
+        <button onclick="submitChat(event)" class="btn">Send</button>
+        <button onclick="closeChat()" class="btn close">Close</button>
+
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------CONTENT---------------------------------------------------->
+<br>
+<br>
+<br>
+<br>
+
+<div class="Main-Container">
+
+
+    <div class="Container">
+
+        <div class="content-wrapper">
+            <div class="container-text">
+                <div class="purpose-text"><p>Purpose</p></div>
+                <div class="what-we-do"><h1>What We Do</h1></div>
+                <div class="content-text-headline">Our website provides customers with valuable insights 
+                    into the significance of recipes across American, Asian, 
+                    and Italian brands. </div>
+            </div>
+            <div class="About-Image"><img src="/images/peopleabout.jpg"></div>
+
+        </div>
+        
+
+        </div>
+
+
+
+        <div class="Container-Two">
+            <div class="content-wrapper-two">
+                <div class="container-text-two">
+                    <div class="our-mission-text">Our Mission</div>
+                    <div class="how-we-do-it"><h1>Why We Do It</h1></div>
+                    <div class="mission-text"><p>Our mission is to celebrate 
+                        the rich culinary traditions of American, Asian, and Italian cultures 
+                        by offering a diverse array of recipes that reflect the unique flavors, ingredients, 
+                        and techniques of each cuisine. We believe that understanding and appreciating these
+                         cultural recipes fosters a deeper connection to our global community and enriches 
+                         our daily lives. By providing authentic, time-honored recipes, we aim to preserve
+                          and promote the heritage of these cuisines while inspiring creativity and innovation in the kitchen.</p></div>
+                        <div class="mission-text-two"><p>Through our platform, 
+                            we strive to educate and empower home cooks and food enthusiasts 
+                            to explore and embrace the culinary diversity that defines American, 
+                            Asian, and Italian cultures. We are committed to sourcing and sharing 
+                            high-quality, culturally significant recipes that highlight the importance 
+                            of food in bringing people together, celebrating traditions, and creating lasting 
+                            memories. By bridging the gap between different culinary worlds, 
+                            we hope to inspire a more inclusive and delicious future for all.</p></div>
+                </div>
+ 
+            </div>
+
+            <div class="content-wrapper-three">
+                <div class="content-wrapper-img"><img src="/images/americanreceipe.webp"></div>
+                <div class="content-wrapper-img"><img src="/images/asisnrecipe.png"></div>
+                <div class="content-wrapper-img"><img src="/images/italianreceipe.png"></div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="Container-Three">
+
+            <div class="content-wrapper-four">
+                <div class="Here-Help-Text">
+                    <div class="here-to-help"><p>We're Here To Help You</p></div>
+                    <div class="deserve-header"><h1>You Deserve To Know</h1> </div>
+                    <div class="header-text-container"><p>Recipes research is important for people as
+                         it promotes culinary diversity,
+                         improves health through informed dietary 
+                         choices, and preserves cultural heritage</p></div>
+                </div>
+
+                <div class="Here-Help-Text-Two">    
+                    <div class="here-to-help-two"><p>American recipes often incorporate
+                         a variety of fresh, locally-sourced ingredients that promote 
+                         balanced nutrition, while Asian recipes emphasize the use of vegetables, 
+                         lean proteins, and healthful herbs, supporting overall wellness. Italian 
+                         recipes, with their focus on Mediterranean diet principles like olive oil, 
+                        whole grains, and fresh produce, contribute to heart health and longevity.</p></div>
+                    <div class="here-to-help-three"><p>Recipes from different cultures can 
+                        pose health concerns if they include ingredients that some individuals 
+                        may be allergic to or if they rely heavily on high-fat, high-sugar, or 
+                        high-sodium components, which can contribute to chronic health issues. 
+                        Additionally, improper handling or preparation of unfamiliar ingredients may lead to 
+                        foodborne illnesses or nutritional imbalances.</p></div>
+                    
+                </div>
+                
+
+
+            </div>
+
+
+                    <div class="video-container">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/WLbhNLbpVEQ?si=qtz-dLX1qHocWRnN" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+     
+        </div>
+
+
+
+
+
+
+
+
+            <div class="Container-Four">
+
+                <div class="Container-Four-Wrapper">
+                    <div class="container-four-wrapper-text">  Lets Build on the highlights of foundation of recipes</div>
+                </div>
+
+
+                <div class="Container-Four-Wrapper-Two">
+                  
+               
+
+                <div class="container-four-content">
+                    <div class="budget-image"><img src="/images/budget.png"></div>
+                    <div class="budget-text"><h3>Budget-Friendly:</h3>
+                    <p>American, Asian, and Italian recipes often use affordable, locally-sourced ingredients,
+                     making it easy to create delicious meals without breaking the bank.</p></div>
+                </div>
+
+                <div class="container-four-content">
+                    <div class="health-image"><img src="/images/health.png"></div>
+                    <div class="health-text"><h3>Health Benefits:</h3>
+                    <p>These cuisines emphasize fresh produce, lean proteins, 
+                        and whole grains, supporting balanced nutrition and 
+                        overall well-being.</p></div>
+                </div>
+
+                <div class="container-four-content">
+                    <div class="cultural-image"><img src="/images/cultural.png"></div>
+                    <div class="cultural-text"><h3>Cultural Appreciation</h3>
+                    <p>Exploring these diverse recipes allows individuals to 
+                        connect with and appreciate the rich culinary 
+                        traditions and cultural heritage of American, Asian,
+                         and Italian communities.</p></div>
+                </div>
+                <div class="container-four-content">
+                    <div class="investment-image"><img src="/images/investment.png"></div>
+                    <div class="investment-text"><h3>Long-term Investment</h3>
+                    <p>Learning to cook these recipes enhances culinary skills,
+                         fosters sustainable eating habits,
+                         and provides the tools for a healthier, more cost-effective lifestyle in the long run.</p></div>
+                </div>
+
+            </div>
+
+
+
+
+
+            </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+<!-----------------------------------------NEWSLETTER---------------------------------------------------->
+
+ <div class="NewsLetter-Container">
+
+    <div class="NewsLetter-Wrapper">
+
+        <div class="NewsLetter-Header">
+            <h1>Join The Internet largest Food Plan newsletter</h1>
+            <p> We'll send you articles, product guides, and exclusive offers customized to your goals.</p>
+        </div>
+  
+
+    <div class="Newsletter-Sign-Up">
+      <form onsubmit="submitNewsLetter(event)">
+        <input type="email" class="newsletter-signup" id="newsletter-signup" placeholder="email@example.com">
+        <button onsubmit="submitNewsLetter(event)" class="submit-btn-newsletter" type="submit">Submit</button><br><br>
+            <div class="Submit-Letter-Container" id="submit-letter-container">
+                <span class="submit-letter" id="submit-letter">Thanks for subscribing!</span><br>
+                <span>Check Your Email For A Confirmation Message</span>
+            </div>
+      </form>
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------FOOTER------------------------------------------------------>
+
+
+
+<footer id="footer-wrapper">
+
+    <div class="Footer-Wrapper">
+
+        <div class="Footer-Home">
+            <button disabled>Home</button>
+        </div>
+
+
+        <div class="Footer-About">
+            <button disabled>About</button>
+        </div>
+
+        
+
+
+        <div class="Footer-Learn">
+            <button disabled>Learn</button>
+        </div>
+
+    </div>
+
+
+    <div class="Footer-Wrapper-Two">
+        
+        <div class="Footer-Content">
+            <div>The content in this website is not professional advice from any Registered Dietitian and it’s intended for informational and educational purposes only.</div>
+        </div>
+
+       
+    </div>
+
+
+    <div class="Footer-Wrapper-Three">
+
+        <div class="Footer-Copyright">
+            <p><span>&#169;</span>2024 Food Recipe Supply </p>
+        </div>
+
+        <div class="Footer-Social-Media">
+            <div><img src="/images/twitter.png">
+                <img src="/images/pintrest.png">
+                <img src="/images/instagraam.png">
+                <img src="/images/mete.png">
+        </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

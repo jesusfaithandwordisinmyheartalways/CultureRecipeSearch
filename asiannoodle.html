@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+
+    <link rel="stylesheet" href="/AsianNodCSS/asiannod.css">
+    <script defer src="AsianNodJS/asiannod.js"></script>
+
+
+    <title>Asian Noodles Recipe</title>
+</head>
+
+
+
+<body>
+
+
+
+
+<!---------------------------------------NAVBAR-------------------------------------------------->
+
+<nav>
+
+    <div class="Nav-Container" id="nav-container">
+
+        <div class="Nav-Wrapper">
+
+            <div class="Nav-Left-Side">
+                <h1>Food Recipe Supply</h1>
+            </div>
+
+            <div class="Nav-Right-Side">
+               <button onclick="Welcome()" type="button">Home</button>
+               <button onclick="About()" type="button">About</button>
+               <button onclick="Learn()" type="button">Learn</button>
+               <button onclick="clearCookies()" type="button">Clear Data</button>
+               <button onclick="Logout()" type="button">Exit</button>
+                 
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------POP UP CHAT SECTION----------------------------------------------------->
+
+<button onclick="openChat()" class="Open-Chat-Btn" id="open-chat-btn">Asian Noddle Question ?</button>
+<div class="Chat-Popup" id="chat-popup">
+    <form class="form-chat-popup" id="form-chat-popup">
+        <h1>Feedback</h1>
+        <label>Message:</label>
+        <textarea id="text-message" placeholder="Feedback on What You've Learned..." name="text-mg" required></textarea>
+        <button onclick="submitChat(event)" class="btn">Send</button>
+        <button onclick="closeChat()" class="btn close">Close</button>
+
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------ASIAN NOODLE CONTENT---------------------------------------------------->
+
+<div class="Asian-Noodle-Banner-Container">
+
+
+        <div class="Asian-Noodle-Wrapper">
+
+            <div class="asian-noodle-header">
+                <div><h1>Asian Noodles Recipe </h1></div>
+            </div>
+
+        </div>
+
+</div>
+
+
+        
+
+        <div class="Main-Asian-Noodle-Wrapper">
+
+
+            <div class="Container-One">
+                <div class="asian-noodle-image">
+                    <img src="/images/asiannoodles.jpg"></div>
+                <div class="asian-noodle-content">
+                    <div class="asian-noodle-paragraphs"><p>Craving for Asian Noodles? You're not Alone</p></div>
+                    <div class="asian-noodle-paragraphs"><p>Asian noodles are often paired with rich broths, savory sauces,
+                         and a variety of spices and seasonings, creating deeply 
+                         satisfying and flavorful dishes.</p></div>
+                    <div class="asian-noodle-paragraphs"><p>The diverse range of textures,
+                         from the chewy bite of ramen to the silky 
+                        smoothness of rice noodles, offers a unique and enjoyable eating experience.</p></div>
+                        <div class="asian-noodle-paragraphs">
+                            <p>Asian noodles are a diverse and integral part of many Asian cuisines, 
+                                each type offering unique flavors, textures, and culinary applications.
+                                 They are generally made from various base ingredients, including wheat, rice,
+                                  buckwheat, or mung bean starch, which are mixed with water and sometimes other
+                                   ingredients like eggs or alkaline water. The dough is kneaded until smooth and elastic, 
+                                   then left to rest before being rolled out and cut into strands of varying thickness
+                                    and width. For example, ramen noodles are made from wheat flour, salt, water, and kansui
+                                     (alkaline water), which gives them their distinct chewiness and yellow color.
+                                      Udon noodles, also made from wheat flour, are thicker and chewier, while soba
+                                       noodles are made from buckwheat 
+                                flour, often mixed with wheat flour, giving them a nutty flavor and firm texture.</p>
+                        </div>
+                        <div class="asian-noodle-paragraphs">
+                            <p>Rice noodles, another popular variety, are made from rice flour and water,
+                                 resulting in noodles that can be thin like vermicelli or wide and flat like those used in
+                                  pad Thai. Cellophane noodles, also known as glass noodles, are made from mung bean starch and 
+                                  water, and are known for their translucent appearance and slippery texture when cooked.
+                                   The preparation of these noodles varies:
+                                 they can be dried for storage, steamed, boiled, or fried, depending on the type and intended use.</p>
+                        </div>
+                        <div class="asian-noodle-paragraphs">
+                            <p>Asian noodles are incredibly versatile and are used in a wide range of dishes,
+                                 from hearty soups like pho and ramen to stir-fries like chow mein and yakisoba,
+                                  as well as cold salads and spring rolls. They are often paired with rich broths, savory sauces,
+                                   fresh vegetables, and proteins such as meat, seafood, or tofu, making them a well-rounded and 
+                                   satisfying component of many meals. The popularity of Asian noodles is due not only to their delicious taste
+                                    and comforting textures but also to their nutritional benefits, providing a balance of carbohydrates, proteins, 
+                                    and fiber, especially when combined with vegetables and lean proteins. These factors, along with their
+                                     quick preparation time and adaptability to 
+                                various dietary needs, make Asian noodles a beloved and essential element of culinary traditions worldwide.</p>
+                        </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="Container-Two">
+
+                    <div class="asian-noodle-wrapper">
+
+                        <div class="asian-noodle-title"><div class="asian-noodle-title-name">Asian Noodles</div></div>
+                        <div class="asian-noodle-cuisines"><div class="cusine-text">Cuisine:<span class="asian-noodle-cuisines-name">Asian</span></div></div>
+                    </div>
+
+
+
+
+                <div class="asian-noodle-benefits"><h3>Benefits of Asian Noodles</h3></div>
+                <div class="asian-noodle-balance">
+                    <div><h3>Nutritional Balance:</h3></div>
+                </div>
+
+                <div class="asian-noodle-list">
+                    <ul>
+                        <li><span style="color:coral; font-size: 21px;">Carbohydrates:</span> Provide a quick source of energy.</li>
+                        <li><span style="color:coral; font-size: 21px;">Protein:</span> Many dishes include proteins like tofu, meat, or seafood.</li>
+                        <li> <span style="color:coral; font-size: 21px;">Vegetables:</span> Commonly added, providing vitamins, minerals, and fiber.</li>
+                    </ul>
+                </div>
+
+                <div class="asian-noodle-balance-two">
+                    <div><h3>Variety and Versatility:</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-two">
+                    <ul>
+                        <li>Available in numerous types such as wheat, rice, egg, and cellophane noodles.</li>
+                        <li>Can be used in soups, stir-fries, salads, and cold dishes, allowing for diverse culinary applications.</li>
+                    </ul>
+                </div>
+
+
+                <div class="asian-noodle-balance-three">
+                    <div><h3>Flavorful and Satisfying</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-three">
+                    <ul>
+                        <li>Often combined with rich broths, savory sauces, and a variety of seasonings and spices, making them flavorful and satisfying.</li>
+                        <li>Different textures (chewy, smooth, or firm) enhance the eating experience.</li>
+                    </ul>
+                </div>
+
+
+                <div class="asian-noodle-balance-four">
+                    <div><h3>Quick and Easy to Prepare</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-four">
+                    <ul>
+                        <li>Many Asian noodle dishes can be prepared quickly, making them convenient for busy lifestyles..</li>
+                        <li>Instant noodles offer an even faster option, though they should be consumed in moderation due to their high sodium content.</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="asian-noodle-balance-five">
+                    <div><h3>Cultural and Comforting</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-five">
+                    <ul>
+                        <li>Serve as a connection to cultural heritage and traditional foods for many people</li>
+                        <li>Provide a sense of comfort and warmth, often considered comfort food.</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="asian-noodle-balance-six">
+                    <div><h3>Potential Health Benefits</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-six">
+                    <ul>
+                        <li>Rice noodles are gluten-free, making them suitable for those with gluten intolerance or celiac disease.</li>
+                        <li>Noodle dishes often incorporate fresh ingredients, contributing to a balanced diet.</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="asian-noodle-balance-seven">
+                    <div><h3>Economic and Accessible</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-seven">
+                    <ul>
+                        <li>Generally affordable and widely available, making them accessible to a broad range of people.</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="asian-noodle-balance-eight">
+                    <div><h3>Customizable</h3></div>
+                </div>
+
+                <div class="asian-noodle-list-eight">
+                    <ul>
+                        <li>Easy to adapt to various dietary preferences and restrictions, such as vegetarian, vegan, or low-fat diets.</li>
+                        <li>Can be tailored to individual taste preferences by adjusting ingredients and seasonings.</li>
+
+                    </ul>
+                </div>
+
+
+
+
+                
+                    <div class="asian-noodle-instructions-wrapper">
+                        <div class="an-instructions">Instructions</div>
+                    </div>
+
+                        <div class="an-instructions-wrapper">
+                            <div class="an-instructions-content">
+                                <div>
+                                    <p>Step 1: </p>
+                                    <span class="an-instructions-text">Cook noodles according to package directions; drain well.Blanch snow peas in boiling water 1 minute</span>  
+                                </div>
+                                <div>
+                                    <p>Step 2: </p>
+                                    <span class="an-instructions-text">Drain and refresh in cold water, then pat dry</span>
+                                </div>
+
+                                <div>
+                                    <p>Step 3: </p>
+                                    <span class="an-instructions-text">Transfer to medium bowl</span>
+                                </div>
+
+                                <div>
+                                    <p>Step 4: </p>
+                                    <span class="an-instructions-text">Add carrots and scallions.In medium skillet, heat oil over medium heat</span>   
+                                </div>
+                                <div>
+                                    <p>Step 5: </p>
+                                    <span class="an-instructions-text">Add garlic and chile pepper and cook, stirring often, 30 seconds</span>
+                                </div>
+                                <div>
+                                    <p>Step 6: </p>
+                                    <span class="an-instructions-text">Add mushrooms and cook, stirring often, 2 minutes</span>
+                                </div>
+                                <div>
+                                    <p>Step 7: </p>
+                                    <span class="an-instructions-seven">Add mushrooms to bowl with vegetables</span>
+                                </div>
+                                <div>
+                                    <p>Step 8: </p>
+                                    <span class="an-instructions-eight">Add vinegar, ginger and hoisin sauce to pan and warm through.</span>
+                                </div>
+                                <div>
+                                    <p>Step 9: </p>
+                                    <span class="an-instructions-nine">Pour over vegetables</span> 
+                                </div>
+                                <div>
+                                    <p>Step 10: </p>
+                                    <span class="an-instructions-ten">"Add noodles and toss.</span>
+                                </div>
+                                <div>
+                                    <p>Step 11: </p>  
+                                    <span class="an-instructions-eleven">Serve these noodles with a packaged miso soup mix.</span>
+                                </div>
+                                                               
+                            </div>
+
+                            <div>
+                            </div>
+
+                        </div>
+
+          
+                       
+                    <div class="asian-noodle-ingredients-wrapper">
+                        <div class="an-ingredients">Ingredients</div>
+                        <span class="an-ingredients-one">2 mediums carrots julienned</span>
+                        <span class="an-ingredients-two">1/2 cup cashews (optional)</span>
+                        <span class="an-ingredients-three">"12 ounces dry egg noodles"</span>
+                        <span class="an-ingredients-four">2 teaspoons minced fresh ginger</span>
+                        <span class="an-ingredients-five">4 ounces fresh shiitake mushrooms stemmed, sliced</span>
+                        <span class="an-ingredients-six">1 garlic clove minced</span>
+                        <span class="an-ingredients-seven">1 green chile pepper seeded, minced</span>
+                        <span class="an-ingredients-eight">1 tablespoon hoisin sauce</span>
+                        <span class="an-ingredients-nine">1 medium red bell pepper julienned</span>
+                        <span class="an-ingredients-ten">3 tablespoons rice wine vinegar</span>
+                        <span class="an-ingredients-eleven">2 scallions, white and light green parts sliced</span>
+                        <span class="an-ingredients-12"></span>
+
+                    </div>
+              
+
+
+
+
+
+                <div class="Asian-Noodle-Nutrition-Wrapper">
+                    <div>Nutrition</div>
+                </div>
+
+                <div class="asian-noodle-nutrition-facts-wrapper">
+                    <p style="color:coral">Calories:</p><span>549</span>
+                    <p style="color:coral">Protein: </p> <span>18g</span>
+                    <p style="color:coral">Fats: </p>   <span>18g</span>
+                    <p style="color:coral">Carbs: </p>   <span>72g</span> 
+                    <p style="color:coral">Fiber: </p>   <span>8g</span>
+                </div>
+
+
+                <div class="Asian-Noodle-DishType-Wrapper">
+                    <div>Dish Type</div>
+                </div>
+
+
+                <div class="asian-noodle-dish-type-wrapper">
+                    <p>- Side Dish</p>
+                    <p>- Lunch</p>
+                    <p>- Main Course</p>
+                    <p>- Main Dish</p>
+                    <p>- Dinner</p>
+                </div>
+
+
+                <div class="Asian-Noodle-Diets-Wrapper">
+                    <div>Diets</div>
+                </div>
+
+
+                <div class="asian-noodle-diets-type-wrapper">
+                   <p>- Dairy Free</p>
+                </div>
+
+                <div class="asian-noodle-facts-wrapper">
+                    <h1>Facts</h1>
+                 </div>
+
+                 <div class="asian-noodle-facts-list-wrapper">
+                    <p>Servings</p> <span>4</span>
+                    <p>Minutes</p>  <span>45</span>
+                    <p>HealthScore</p> <span>42</span>
+                 </div>
+ 
+ 
+
+ 
+
+
+
+
+   
+        </div>
+
+
+
+
+
+
+            <div class="Container-Three">
+                
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------FOOTER------------------------------------------------------>
+
+
+
+<footer id="footer-wrapper">
+
+    <div class="Footer-Wrapper">
+
+        <div class="Footer-Home">
+            <button disabled>Home</button>
+        </div>
+
+
+        <div class="Footer-About">
+            <button disabled>About</button>
+        </div>
+
+        
+
+
+        <div class="Footer-Learn">
+            <button disabled>Learn</button>
+        </div>
+
+    </div>
+
+
+    <div class="Footer-Wrapper-Two">
+        
+        <div class="Footer-Content">
+            <div>The content in this website is not professional advice from any Registered Dietitian and it’s intended for informational and educational purposes only.</div>
+        </div>
+
+        
+    </div>
+
+
+    <div class="Footer-Wrapper-Three">
+
+        <div class="Footer-Copyright">
+            <p><span>&#169;</span>2024 Food Recipe Supply </p>
+        </div>
+
+        <div class="Footer-Social-Media">
+            <div><img src="/images/twitter.png">
+                <img src="/images/pintrest.png">
+                <img src="/images/instagraam.png">
+                <img src="/images/mete.png">
+        </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
