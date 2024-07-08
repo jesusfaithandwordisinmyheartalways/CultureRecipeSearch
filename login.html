@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+
+
+    <link rel="stylesheet" href="/logincss/login.css">
+    <script defer src="/jsLogin/login.js"></script>
+
+    <title>Sign In</title>
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+ <!--------------------------------------FORM-------------------------------------------------------->
+
+
+
+
+    <div class="Form-Login-Container">
+        <div class="Wrapper">
+              
+            <form onsubmit="loginForm(event)" class="Form-Wrapper" name="formLogin" id="loginForm">
+                <h1 class="header-text">Food Recipe Supply</h1>
+                <h1>Login Access</h1>
+                <label>Username:</label><br><br>
+                <input type="password" class="username" id="usernameLogin" name="userLogin" placeholder="Username" autocomplete="off" required><br><br>
+                    <div class="Username-Error-Login-Container" >
+                        <div class="Username-Error-Login-Wrapper" id="username-error-login-wrapper">
+                            <span class="username-error-login" id="username-error-login"></span>  
+                        </div>
+                    </div>
+    
+                <label>Email:</label><br><br>
+                <input type="email" class="user-email" id="userEmailLogin" placeholder="Email" autocomplete="off" required><br><br>
+                        <div class="UserEmail-Error-Login-Container" id="user-email-error-login-container">
+                            <div class="UserEmail-Error-Login-Wrapper">
+                                <span class="user-email-login-error" id="user-email-login-error"></span>
+                            </div>
+                        </div>
+    
+                             <button  type="submit" class="submit-btn-login">Submit</button>
+    
+            </form>
+            
+        </div>
+
+    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
