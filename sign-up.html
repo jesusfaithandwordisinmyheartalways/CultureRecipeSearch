@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+
+    
+    <title>Food Recipe Supply</title>
+
+    <link rel="stylesheet" href="/css/signup.css">
+    <script defer src="/js/signup.js"></script>
+    
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+<!--------------------------------------HEADER--------------------------------------------------->
+        <header>
+
+                <div class="Container">
+                    <div class="header-wrapper">
+                        <div class="header-text">
+                            <h1>Food Recipe Supply</h1>
+                        </div>
+                    </div>
+                </div>
+
+        </header>
+
+
+
+
+
+
+<!--------------------------------------NAVBAR-------------------------------------------------------->
+
+
+        <navbar class="Weekly-Meal-Container" id="weekly-meal-container">
+
+                <div class="weekly-meal-wrapper">
+
+
+                    <div><img src="/images/nutritionplanicon.jpg" style="width: 150px; height: 110px;"></div>
+
+                        <div>
+                            <h1>Plan Your Weekly Meal <span onclick="displayTable()" class="navbar-text" id="navbar-text">Click Here</span></h1>
+                        
+                        </div>
+
+                        <div><img src="/images/mealplan.webp" style="width: 150px; height: 110px;"></div>
+
+
+                </div>
+
+
+        </navbar>
+
+
+
+
+
+
+<!--------------------------------------CONTENT-------------------------------------------------------->
+
+
+
+        <main class="Content">
+
+            <div class="Food-Supply-Container">
+                <div>Food Recipe Supply is featured on</div>
+            </div>
+
+                <div class="Content-Child-Flex"> 
+                     <div class="content"><img src="/images/readers-digest-logo.jpg"></div>
+                    <div class="content"> <img src="/images/healthlinelogo.png"> </div>
+                    <div class="content"> <img src="/images/NewYorkMagazineLogo.png"> </div>
+                    <div class="content"> <img src="/images/womenshealthlogo.png">  </div>
+                    <div class="content">  <img src="/images/popsugarlogo.png"> </div>
+                </div>
+
+
+
+        </main>
+
+
+
+
+
+
+<!--------------------------------------CONTENT TWO-------------------------------------------------------->
+
+    <div class="Container-Two" id="container-two">
+
+        <div class="Container-Two-Wrapper">
+
+
+        <div class="BIO-Image-Wrapper"><img src="images/dinnerplate.png" alt="dinner-plate"></div>
+
+
+        <div class="BIO" style="font-size: 21px;"><b style="color:green">Your Food Recipe Source</b>
+
+            <div class="bio-text" style="font-size: 18px;">Welcome to Food Recipe Supply, your ultimate destination for all things culinary!
+                 Whether you're a seasoned chef 
+                or a kitchen novice, our platform is designed to make your cooking journey effortless and enjoyable.</div>
+                <div>
+                    <ul>
+                        <li><b style="color:coral">Recipe Search:</b> Explore a vast collection of recipes from around the world. From quick weeknight dinners to elaborate weekend feasts, find the perfect recipe to suit your taste and dietary preferences.</li>
+                        <li> <b style="color:coral"> Nutrition Information:</b> Stay informed and healthy with detailed nutritional breakdowns for every recipe. Easily track your intake of calories, macros, and essential nutrients to meet your health goals.</li>
+                        <li><b style="color:coral"> Meal Planning:</b> Simplify your meal prep with our customizable meal planning tools. Generate personalized meal plans based on your dietary needs, preferences, and schedule, ensuring you always have delicious and balanced meals ready to go</li>
+                    </ul>
+                   </div>
+
+
+
+        </div>
+
+
+
+        <div class="Form">
+            <form onsubmit="submitForm(event)" id="formSignUp" name="formLogin">
+                <h1>Gain Access</h1>
+                <label>Username:</label><br><br>
+                <input oninput="Username()" type="password" class="username" id="username" name="userLogin" placeholder="Username" autocomplete="off" required><br><br>
+                    <div class="Username-Error-Container" >
+                        <div class="Username-Error-Wrapper" id="username-error-wrapper">
+                            <span class="username-error" id="username-error">Must Contain One Uppercase, One Special Character, Min 8 characters</span>
+                            
+                        </div>
+                    </div>
+                <label>Age:</label><br><br>
+                <input oninput="UserAgeData()" type="text" class="userage" id="userAge" placeholder="Age" autocomplete="off" required><br><br>
+                        <div class="UserAge-Error-Container" id="user-age-error-container">
+                            <div class="UserAge-Error-Wrapper">
+                                <span class="user-age-error" id="user-age-error"></span>
+                            </div>
+                        </div>
+                <label>Email:</label><br><br>
+                <input oninput="UserEmailData()" type="email" class="user-email" id="user-email" placeholder="Email" autocomplete="off" required><br><br>
+                        <div class="UserEmail-Error-Container" id="user-email-error-container">
+                            <div class="UserEmail-Error-Wrapper">
+                                <span class="user-email-error" id="user-email-error"></span>
+                            </div>
+                        </div>
+
+                             <button  type="submit" class="submit-btn">Submit</button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+ </div>
+    
+
+
+
+
+<!--------------------------------------COOKIE CONTENT BANNER-------------------------------------------------------->
+
+    <div class="Cookie-Banner" id="cookie-banner">
+        <div class="Cookie-Banner-Wrapper">
+            <div class="cookie-image-container">
+                <img src="/images/cookiebannerimage.webp">
+            </div>
+            <h1 class="cookie-header-text">We Use Cookies</h1>
+            <p>Our website uses cookies to enhance your experience. By using our site, you agree to our use of cookies.</p>
+                <a class="privacy-link" id="privacy-link">Learn More</a>
+            <button id="cookie-accept-btn" onclick="AcceptCookies()">Accept</button>
+            <button onclick="RejectCookies()" id="cookie-reject-btn">Reject</button>
+        </div>
+        <div class="privatePolicy" id="privatePrivacy">
+            <h3>Privacy Policy</h3>
+            <p>We collect cookies to deliver a better user experience and to analyze our website traffic and performance. The cookies we collect do not store any personal data and expire at the end of the same day.</p>
+            <p>Reasons why we collect cookies:</p>
+            <ul>
+                <li>This website collects cookies to deliver better user experience</li>
+                <li>We collect cookies to analyze our website traffic and performance; we never collect any personal data</li>
+                <li>Cookies help us display personalized product recommendations and ensure you have a great shopping experience</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+  <!--------------------------------------CLIENT SECTION -------------------------------------------------------->
+
+
+    <div class="Client-Container" id="client-container"> 
+       
+
+        <div class="Client-Wrapper">
+            <div class="Clent-Header">Customers Love Food Recipe Supply.</div>
+        </div>
+
+
+       <div class="Client-Review-Wrapper">
+         <div class="Client-Reviews">6,000+ Reviews
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            </div>
+
+       </div>
+
+
+       
+    
+
+        <div class="Client-Feedback-Wrapper">
+            <div class="Client-Review-Section">
+                <p>Amazing Source of Information on recipes 
+                    My Family Loves This Service
+                </p> </div>
+
+                <div class="Client-Review-Section">
+                    <p>The Meal Preps Outline Has Helped Me 
+                        Developed A Healthier LifeStyle</p></div>
+
+                <div class="Client-Review-Section">
+                    <p>Nutrition is Key For Foods. Food Recipe Supply Makes It easy
+                        to track calories, macros, and essential nutrients.
+                    </p></div>
+               
+            </div>
+
+
+                <div class="Client-Name-Wrapper">
+                    <div class="Client-Names">Sarah Hogan</div>
+                    <div class="Client-Names">Tiffany Wursvik</div>
+                    <div class="Client-Names">Ted Murphy</div>
+                </div>
+
+
+                <div class="Client-Company-Wrapper">
+                    <div class="Client-Company"><img src="/images/womenshealthlogo.png"></div>
+                    <div class="Client-Company"><img src="/images/popsugarlogo.png"></div>
+                    <div class="Client-Company"><img src="/images/healthlinelogo.png"></div>
+
+
+
+
+                </div>
+
+            
+           
+
+
+
+
+
+        </div>
+       
+
+
+
+    
+
+
+
+ <!--------------------------------------WEEKLY MEAL SECTION -------------------------------------------------------->
+
+
+    <div class="Table-Container" id="table-container">
+        <div class="Close-Table-Container">
+            <div class="Close-Table-Wrapper">
+                <span onclick="closeTable()" class="close-table-btn">&#10005;</span>
+            </div>
+        </div>
+
+        <table class="Table-Wrapper">
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                
+            </tr>
+            <tr>
+                <td class="title" style="color:green"> Asian Aromatic Chicken & Rice Soup with Fried Garlic Oil</td>
+                <td class="title-two" style="color:green">Asian Gut-Healthy Miso Cup Soup</td>
+                <td class="title-three" style="color:green">Asian Red Curry Coconut Soup with Chicken  </td>
+                <td class="title-four" style="color:green">Cobb Salad Recipe </td>
+                <td class="title-five" style="color:green">Grilled Broccoli </td>
+                <td class="title-six" style="color:green"> Italian-Style Turkey and Penne Toss</td>
+                <td class="title-seven" style="color:green">Zoodle Bowls with Tomato Sauce and Sausage Recipe</td>
+            </tr>
+            <tr>
+                <td class="serv">Servings 4</td>
+               <td class="serv-two">Servings 2</td>
+               <td class="serv-three">Servings: 4</td>
+               <td class="serv-four">Servings: 4</td>
+                <td class="serv-five">Servings: 4</td>
+                <td class="serv-six">Servings: 4</td>
+                <td class="serv-seven">Servings: 4</td>
+            </tr>
+            <tr>
+                <td class="min">Minutes to Cook: 45 minutes</td>
+                 <td class="min-two">Minutes to Cook: 15 minutes</td>
+                  <td class="min-three">Minutes to Cook: 30 minutes</td>
+                   <td class="min-four">Minutes to Cook: 20 minutes</td>
+                    <td class="min-five">Minutes to Cook: 15 minutes</td>
+                     <td class="min-six">Minutes to Cook: 25 minutes</td>
+                      <td class="min-seven">Minutes to Cook: 30 minutes</td>
+            </tr>
+            <tr>
+                <td class="cal">Calories: 350 per serving</td>
+                <td class="cal-two">Calories: 120 per serving</td>
+                <td class="cal-three">Calories: 400 per serving</td>
+                <td class="cal-four">Calories: 550 per serving</td>
+                <td class="cal-five">Calories: 120 per serving</td>
+                <td class="cal-six">Calories: 450 per serving</td>
+                <td class="cal-seven">Calories: 350 per serving</td>
+            </tr>
+            <tr>
+                <td class="carb">Carbohydrates: 45g</td>
+                 <td class="carb-two">Carbohydrates: 15g</td>
+                  <td class="carb-three">Carbohydrates: 30g</td>
+                   <td class="carb-four">Carbohydrates: 15g</td>
+                    <td class="carb-five">Carbohydrates: 10g</td>
+                     <td class="carb-six">Carbohydrates: 50g</td>
+                      <td class="carb-seven">Carbohydrates: 25g</td>
+            </tr>
+            <tr>
+                <td class="fat">Fat: 10g</td>
+                <td class="fat-two">Fat: 5g</td>
+                <td class="fat-three">Fat: 25g</td>
+                <td class="fat-four">Fat: 40g</td>
+                <td class="fat-five">Fat: 8g</td>
+                <td class="fat-six">Fat: 12g</td>
+                <td class="fat-seven">Fat: 20g</td>
+            </tr>
+            <tr>
+                <td class="protein">Protein: 20g</td>
+                <td class="protein-two">Protein: 6g</td>
+                <td class="protein-three">Protein: 18g</td>
+                 <td class="protein-four">Protein: 30g</td>
+                 <td class="protein-five">Protein: 4g</td>
+                 <td class="protein-six">Protein: 28g</td>
+                 <td class="protein-seven">Protein: 18g</td>
+            </tr>
+
+
+        </table>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+  <!--------------------------------------POP UP CHAT SECTION -------------------------------------------------------->
+
+        <button onclick="openChat()" class="Open-Chat-Btn" id="open-chat-btn">Connect With Us</button>
+            <div class="Chat-Popup" id="chat-popup">
+                <form class="form-chat-popup" id="form-chat-popup">
+                    <h1>We Love Your Feedback</h1>
+                    <label>Message:</label>
+                    <textarea id="text-message" placeholder="Type Message..." name="text-mg" required></textarea>
+                    <button onclick="submitChat(event)" class="btn">Send</button>
+                    <button onclick="closeChat()" class="btn close">Close</button>
+
+                </form>
+                
+            </div>
+
+
+
+
+
+
+<!--------------------------------------CONTENT THREE --------------------------------------------------------------------------->
+
+
+<div class="Container-Three">
+
+    <div class="Container-Three-Wrapper">
+
+
+    <div class="Recipe-Banner-Wrapper" id="recipe-banner-wrapper">
+        <div class="recipe-banner-image">
+            <img src="/images/recipebanner.jpg" >
+        </div>
+        <div class="recipe-important-bio">
+            <h1>Why Recipes Are Important</h1>
+            <p>Food recipes are crucial for individuals to 
+                consider because they provide a structured approach to preparing
+                 meals that are both nutritious and balanced. Following a recipe ensures
+                  that a variety of essential nutrients are included in the diet, 
+                  which is vital for maintaining good health.
+                   Recipes often specify the use of fresh, whole ingredients
+                    and suggest proper portion sizes, helping to prevent overeating
+                     and the consumption of unhealthy, processed foods.
+                      By adhering to recipes, people can make more informed choices about their food intake, 
+                      ensuring they get the right mix of vitamins, 
+                minerals, and other nutrients necessary for optimal bodily function.</p>
+        </div>
+    </div>
+
+
+    <div class="Nutrition-Banner-Wrapper" id="nutrition-banner-wrapper">
+        <div class="nutrition-banner-image">
+            <img src="/images/nutritionbanner.jpg">
+        </div>
+        <div class="nutrition-important-bio">
+            <h1> Proper Nutrition</h1>
+            <p>Considering food nutrition is essential for 
+                maintaining overall health and preventing chronic diseases. 
+                Nutrients such as vitamins, minerals, proteins, fats, and carbohydrates play 
+                specific roles in bodily functions, from supporting the immune system to providing 
+                energy and aiding in cell repair. A balanced diet rich in essential nutrients helps 
+                maintain healthy body weight, enhances cognitive function, and boosts energy levels. 
+                Proper nutrition is also linked to a lower risk of developing conditions such as heart disease,
+                 diabetes, and certain cancers. By being mindful of the nutritional content of 
+                their food, people can ensure they are meeting their body's 
+                needs and promoting long-term health.</p>
+        </div>
+
+    </div>
+
+    <div class="MealPlan-Banner-Wrapper" id="mealplan-banner-wrapper">
+        <div class="mealplan-banner-image">
+            <img class="image-three" src="/images/mealplanbanner.jpg">
+        </div>
+        <div class="mealplan-important-bio">
+            <h1>Meal Plan Outline</h1>
+            <p>Meal plan nutrition is vital for individuals to 
+               consider because it provides a structured approach to 
+               achieving and maintaining a balanced diet. By planning 
+               meals ahead of time, people can ensure they are incorporating a 
+               variety of nutrient-dense foods that provide the necessary vitamins,
+                minerals, proteins, fats, and carbohydrates for optimal health. 
+                This proactive approach helps in avoiding the pitfalls of impulsive 
+                eating choices that often lead to the consumption of unhealthy, processed foods.
+                 With a well-thought-out meal plan, individuals can control portion sizes, reduce the 
+                 risk of overeating, and maintain a healthy weight, 
+              all of which are crucial for preventing chronic diseases such as 
+              obesity, diabetes, and heart disease.</p>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+ <!--------------------------------------CONTENT FOUR -------------------------------------------------------->
+
+    <div class="Container-Four">
+        <div class="NewsLetter-Wrapper">
+
+            <div class="NewsLetter-Header">
+                <h1>Join The Internet largest Food Recipe Newsletter</h1>
+                <p> We'll send you articles, product guides, and exclusive offers customized to your goals.</p>
+            </div>
+      
+
+        <div class="Newsletter-Sign-Up">
+          <form onsubmit="submitNewsLetter(event)">
+            <input type="email" class="newsletter-signup" id="newsletter-signup" placeholder="email@example.com">
+            <button onsubmit="submitNewsLetter(event)" type="submit">Submit</button><br><br>
+                <div class="Submit-Letter-Container" id="submit-letter-container">
+                    <span class="submit-letter" id="submit-letter">Thanks for subscribing!</span><br>
+                    <span>Check Your Email For A Confirmation Message</span>
+                </div>
+          </form>
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<!--------------------------------------CONTENT FIVE -------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------------------FOOTER -------------------------------------------------------->
+
+
+<footer id="footer-wrapper">
+
+    <div class="Footer-Wrapper">
+
+        <div class="Footer-Home">
+            <button disabled>Home</button>
+        </div>
+
+
+        <div class="Footer-About">
+            <button disabled>About</button>
+        </div>
+
+        
+
+
+        <div class="Footer-Learn">
+            <button disabled>Learn</button>
+        </div>
+
+    </div>
+
+
+    <div class="Footer-Wrapper-Two">
+        
+        <div class="Footer-Content">
+            <div>The content in this website is not professional advice from any Registered Dietitian and it’s intended for informational and educational purposes only.</div>
+        </div>
+
+      
+
+    </div>
+
+
+    <div class="Footer-Wrapper-Three">
+
+        <div class="Footer-Copyright">
+            <p><span>&#169;</span>2024 Food Recipe Supply </p>
+        </div>
+
+        <div class="Footer-Social-Media">
+            <div><img src="/images/twitter.png">
+                <img src="/images/pintrest.png">
+                <img src="/images/instagraam.png">
+                <img src="/images/mete.png">
+        </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
