@@ -1,0 +1,1587 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+
+
+:root {
+    --white: white;
+    --skyBlue: skyBlue;
+    --green: green;
+    --dodgerBlue: dodgerblue;
+    --seaGreen: seagreen;
+    --black: black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    
+}
+
+
+
+
+
+
+
+/*--------------------------------HEADER----------------------------------------------*/
+
+
+.Container {
+  width: 100%;
+  overflow: hidden;
+   
+}
+
+.header-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: linear-gradient(white);
+    max-width: 1200px;
+    margin:0 auto
+
+    
+}
+
+
+.Container .header-text {
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color:black;
+    font-size: 18px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------NAVBAR----------------------------------------------*/
+
+
+.Weekly-Meal-Container {
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+    
+    
+}
+
+
+
+.weekly-meal-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    position: relative;
+    top:0px;
+    right: 0px;
+    font-family: "Abel", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(10px, 3px, 1vw);
+    animation-name: weeklyMeal;
+    animation-duration:6s;
+    animation-delay: 0s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes weeklyMeal {
+    0%{top:0px; right: 0px}
+    50% {top:0px; right: 110px;}
+    100%{top: 0px; right: -110px}
+
+}
+
+
+
+.navbar-text {
+    background-color: var(--black);
+    border-radius: 10px;
+    color:white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0.6em
+}
+
+.navbar-text:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------CONTENT----------------------------------------------*/
+
+
+.Content {
+    width: 100%;
+    overflow: hidden;
+    animation:none;
+    margin-block:30px;
+    z-index: -99;
+    background:white
+}
+
+
+.Food-Supply-Container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    color:slategrey;
+}
+
+
+
+.Content-Child-Flex {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: none !important;
+    transform: none !important;
+}
+
+.Content-Child-Flex img {
+    object-fit: contain;
+    width: 190px;
+    height: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------CONTENT TWO----------------------------------------------*/
+
+
+.Container-Two {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    visibility: visible;
+    width: 100%;
+    margin-block: 90px;
+    z-index: -99;
+    background:linear-gradient(white, whitesmoke, white)
+}
+
+
+.Container-Two-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.BIO-Image-Wrapper {
+    align-self:flex-start;
+    margin-left: 0px;
+    
+}
+
+.BIO {
+ width: 390px;
+}
+
+.BIO > div {
+    font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.BIO ul li {
+    list-style-type: none;
+}
+
+
+
+
+.Form {
+    align-self:flex-start;
+    background: linear-gradient(slategrey, dodgerblue, black);
+    border-radius:10px;
+    height: 420px;
+    width:510px;
+    text-align: center;
+   
+}
+
+
+
+.Username-Error-Container {
+    position: relative;
+    visibility: hidden;
+}
+
+
+.Username-Error-Wrapper {
+    position: absolute;
+    top:-18px;
+    left: 45px;
+    background-color: black;
+    border-radius: 6px;
+    color:red;
+    font-size: 13px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal; 
+    padding:.1em
+}
+
+
+
+
+
+
+.UserAge-Error-Container {
+    position: relative;
+    visibility: hidden;
+
+}
+
+.UserAge-Error-Wrapper {
+    position: absolute;
+    top:-17px;
+    left: 225px;
+    background-color: black;
+    border-radius: 6px;
+    color:red;
+    font-size: 14px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal; 
+    padding:.1em
+}
+
+
+
+
+
+.UserEmail-Error-Container {
+    position: relative;
+    visibility: hidden;
+
+}
+
+
+.UserEmail-Error-Wrapper {
+    position: absolute;
+    top:-17px;
+    left: 210px;
+    background-color: black;
+    border-radius: 6px;
+    color:red;
+    font-size: 14px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal; 
+    padding:.1em
+}
+
+
+.Form h1 {
+    color:white;
+    font-weight: bold;
+}
+
+
+.Form label {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.Form input {
+    padding:0.8em 6em;
+    border-radius:10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.Form input:focus {
+    background-color:white;
+}
+
+.Form button {
+    color:white;
+    padding:0.8em 7em;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    background:lightgreen
+}
+
+.Form button:hover {
+    background:white;
+    color:dodgerblue;
+    cursor: pointer;
+}
+
+.Form button:focus {
+    background:seagreen
+}
+
+
+
+.submit-btn {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------CLIENT SECTION-----------------------------------------------*/
+
+
+
+.Client-Container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-block:30px;
+    background: #fff8e5;
+}
+
+
+
+.Client-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: bold;
+    color:black;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px 10px;
+}
+
+
+
+
+
+
+
+
+.Client-Review-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  
+}
+
+
+.Client-Reviews .star {
+    color:gold;
+    font-size: 2rem;
+    margin:0px 5px
+}
+
+
+.Client-Reviews:not(.star) {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.Client-Feedback-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-block: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.Client-Review-Section {
+    width: 310px;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategrey;
+    font-size: 18px;
+
+}
+
+
+
+
+
+.Client-Name-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: -10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+.Client-Name-Wrapper > div {
+    margin-left: -90px;
+}
+
+.Client-Company-Wrapper > div {
+    margin-left: -90px;
+
+}
+
+.Client-Name-Wrapper .Client-Names {
+    font-weight: bold;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Client-Company-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+
+.Client-Company-Wrapper .Client-Company img {
+    object-fit: contain;
+    width: 130px;
+    height: 50px;
+   
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------TABLE SECTION-----------------------------------------------*/
+
+
+.Table-Container {
+    overflow: hidden;
+    width: 100%;
+    display: none;
+    z-index: 99;
+    text-align: center;
+    
+    
+
+}
+
+.Table-Wrapper {
+    position: absolute;
+    top:60px;
+    left:0px;
+    border: 3px solid #ddd;
+    width: 100%;
+    z-index: 99;
+       
+}
+
+.Table-Wrapper table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid black;
+    z-index: 99;
+}
+
+th {
+    text-align: center;
+}
+
+
+th, td {
+    padding:1.5em;
+  }
+
+  td {
+    border: 3px solid black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    
+
+  }
+
+
+tr {
+    background-color:var(--white);
+    
+}
+
+
+
+  .Close-Table-Container {
+    overflow: hidden;
+    position: absolute;
+    top:10px;
+    right: 90px;
+    cursor: pointer;
+
+  
+  }
+
+  .Close-Table-Wrapper {
+    font-size: 3rem;
+    color:var(--white)
+  }
+
+
+
+
+
+
+
+
+
+  /*---------------------------------COOKIE BANNER SECTION-----------------------------------------------*/
+
+  .Cookie-Banner {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-color:black;
+    color:white;
+    border-radius:20px;
+    padding:3px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+
+  .Cookie-Banner {
+    width: 450px;
+    
+  }
+
+
+  .Cookie-Banner.show {
+    display: block;
+  }
+
+  .cookie-image-container {
+    position: relative;
+  }
+
+  .cookie-image-container img {
+    object-fit: contain;
+    width: 140px;
+  }
+
+  .Cookie-Banner button {
+    border:none;
+    outline: none;
+    padding:10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+
+  .Cookie-Banner button.reject {
+    background-color: #f44336;
+  }
+
+  .Cookie-Banner a {
+     color: #00bfff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+  .privatePolicy {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+
+
+    /*---------------------------------CHAT POP-UP SECTION-----------------------------------------------*/
+
+
+    .Open-Chat-Btn {
+        display: block;
+        position: fixed;
+        bottom:0;
+        right:0;
+        width: 150px;
+        cursor: pointer;
+        color:whitesmoke;
+        background-color:dodgerblue;
+        border:none;
+        outline:none;
+        padding:0.8em 2em;
+    }
+
+
+    .Chat-Popup {
+        position: fixed;
+        display: none;
+        bottom:0;
+        right:15px;
+        border: 3px solid black;
+        z-index: 99;
+    }
+
+    .form-chat-popup {
+        max-width: 300px;
+        padding:10px;
+        background-color:white;
+    }
+    .form-chat-popup label {
+        color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+    }
+
+
+    .form-chat-popup textarea {
+        width: 100%;
+        min-height: 90px;
+        background:darkgrey;
+        resize: none;
+        padding:1em;
+        border:none;
+        margin:5px 0px 25px 0px
+    }
+
+    .form-chat-popup textarea:focus {
+        background:lightgrey;
+        outline:none;
+    }
+
+
+    .form-chat-popup .btn {
+        background-color:lightgreen;
+        color:white;
+        padding:0.8em 2em;
+        cursor: pointer;
+        width: 100%;
+        border:none;
+        outline:none;
+        margin-bottom: 10px;
+    }
+
+    .form-chat-popup .close {
+        background-color:coral
+    }
+
+
+    .form-chat-popup button {
+        opacity: 0.9;
+    }
+
+    .form-chat-popup button:hover {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------CONTENT THREE-----------------------------------------------*/
+
+
+.Container-Three {
+    width: 100%;
+    margin-block: 30px;
+    overflow: hidden;
+    background:white
+    
+}
+
+
+.Container-Three-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+
+.Recipe-Banner-Wrapper {
+    align-self:center;
+    transition: 1s alignSelf ease-in-out;
+    visibility: visible;
+ 
+
+}
+
+ .Nutrition-Banner-Wrapper {
+    align-self:center;
+    transition: 2s alignSelf ease-in-out;
+    visibility: visible;
+}
+
+.Nutrition-Banner-Wrapper {
+    margin-top:30px
+}
+
+
+
+
+
+ .MealPlan-Banner-Wrapper {
+    visibility: visible;
+    align-self:center;
+    transition: 3s alignSelf ease-in-out;
+}
+
+.MealPlan-Banner-Wrapper {
+    margin-top: -90px;
+}
+
+.nutrition-important-bio {
+    margin-top: -10px;
+}
+
+
+
+.Container-Three .Recipe-Banner-Wrapper,
+.Container-Three .Recipe-Banner-Wrapper .recipe-banner-image {
+    width: 450px;
+    box-shadow: 0px 0px 10px 0px whitesmoke inset ;
+    
+}
+
+
+.Container-Three .Nutrition-Banner-Wrapper,
+.Container-Three .Recipe-Banner-Wrapper .nutrition-banner-image {
+    width: 450px;
+    box-shadow: 0px 0px 10px 0px whitesmoke inset ;
+}
+
+.Container-Three .MealPlan-Banner-Wrapper,
+.Container-Three .Recipe-Banner-Wrapper .nutrition-banner-image  {
+    width: 450px;
+    box-shadow: 0px 0px 10px 0px whitesmoke inset ;
+
+}
+
+.Container-Three img {
+    object-fit: contain;
+    width: 450px;
+    
+}
+
+.Container-Three .recipe-important-bio,
+.Container-Three .nutrition-important-bio,
+.Container-Three .mealplan-important-bio {
+    width: 450px;
+}
+
+.Container-Three .recipe-important-bio h1,
+.Container-Three .nutrition-important-bio h1,
+.Container-Three .mealplan-important-bio h1{
+    font-size: 1.3rem;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:coral;
+}
+
+
+
+.Container-Three .recipe-important-bio p,
+.Container-Three .nutrition-important-bio p,
+.Container-Three .mealplan-important-bio p {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    color:grey
+}
+
+
+.mealplan-important-bio {
+    margin-top: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------CONTENT FOUR----------------------------------------------*/
+
+.Container-Four {
+    width: 100%;
+    overflow: hidden;
+    background-color:black;
+    
+}
+
+
+.NewsLetter-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:30px;
+    margin:0 auto;
+    max-width: 1600px;
+    padding:4em
+
+}
+
+
+
+.Newsletter-Sign-Up {
+    margin-top: 45px;
+
+}
+
+.NewsLetter-Header {
+    width: 1460px;
+}
+
+.Newsletter-Sign-Up {
+    width: 990px;
+}
+ 
+
+
+
+.Container-Four .NewsLetter-Wrapper .NewsLetter-Header {
+    color:white;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.NewsLetter-Header p {
+    color:slategrey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+.Newsletter-Sign-Up input {
+    padding:1.3em 2em;
+    border:none;
+    outline:none;
+    background:darkgrey;
+    border-radius:15px;
+    color:white;
+    font-size: 1rem;
+}
+
+.Newsletter-Sign-Up button {
+    padding: 1.7em 3em;
+    border:none;
+    outline: none;
+    border-radius:20px;
+    cursor: pointer;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.Newsletter-Sign-Up button:hover {
+     background-color:coral;
+     color:white
+}
+
+.Newsletter-Sign-Up button:focus {
+    background-color:seagreen;
+
+}
+
+
+.Submit-Letter-Container {
+    visibility: hidden;
+    background-color:black;
+    outline:3px solid rgb(128, 214, 128);
+    overflow: hidden;
+    transition: 3s display linear;
+}
+
+.Submit-Letter-Container span {
+    color:rgb(90, 189, 90);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------CONTENT FIVE----------------------------------------------*/
+
+.Container-Five {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background:green;
+    margin-block: 30px
+
+}
+
+
+.Content-Flex-Wrapper {
+    flex: 0 0 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------FOOTER---------------------------------------------------------*/
+
+footer {
+    position: relative;
+    bottom:0;
+    background-color:lightgrey;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding:3em;
+    z-index: -3;
+    margin-block:-25px;
+    visibility: visible; 
+}
+
+
+
+.Footer-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+.Footer-Wrapper button {
+    color:white;
+    font-weight: bold;
+    padding:1em 3em;
+    cursor: pointer;
+    outline:none;
+    border:none;
+    background:none;
+    border-radius:20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+.Footer-Wrapper-Two {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 20px 3px;
+    margin:0 auto;
+    
+}
+
+.Footer-Content {
+    width: 880px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 0.8rem;
+    border:2px solid grey;
+    padding:1em;
+    text-align: center;
+    
+}
+
+.Footer-ContactUs {
+    width: 150px;
+    color:whitesmoke;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+.Footer-ContactUs img {
+    object-fit: contain;
+    width: 20px;
+}
+
+
+
+
+.Footer-Wrapper-Three {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:0 auto;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.Footer-Copyright {
+    color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-left: -210px;
+    margin-top: 30px;
+}
+
+.Footer-Social-Media {
+    margin-top:30px;
+    margin-right: -90px;
+}
+
+.Footer-Social-Media img {
+    object-fit: contain;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------TABLETS---------------------------------------------------------*/
+
+
+@media screen and  (max-width:1098px) {
+    
+    .weekly-meal-wrapper {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        max-width: 1000px;
+    }
+
+
+
+.Content-Child-Flex {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1000px;
+    animation: none !important;
+    transform: none !important;
+}
+
+  .Content-Child-Flex img {
+    object-fit: contain;
+    width: 130px;
+    height: 85px;
+}
+
+.Container-Two-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    max-width: 1200px;
+    margin:0 auto;
+    margin-top: -90px;
+}
+
+
+.BIO-Image-Wrapper {
+    align-self:flex;
+    margin-left: -50px;
+}
+
+.BIO {
+    margin-top: -200px;
+    margin-left: 210px;
+    width:650px;
+    text-align: center;
+}
+
+.BIO > div > ul > li {
+    margin: 30px 3px;
+}
+
+
+.Form {
+    align-self:flex-start;
+    background: linear-gradient(slategrey, dodgerblue, black);
+    border-radius:10px;
+    height: 420px;
+    width:510px;
+    text-align: center;
+    margin-left: 210px;
+    margin-top: 30px;
+   
+}
+
+.Client-Wrapper {
+    font-size: 28px;
+}
+
+.Client-Review-Wrapper .Client-Reviews {
+    font-size: 18px;
+}
+
+
+.Client-Feedback-Wrapper .Client-Review-Section {
+    font-size: 15px;
+}
+
+.Client-Feedback-Wrapper .Client-Review-Section p {
+    width: 320px;
+    text-align: center;
+}
+
+
+.Container-Three {
+    width: 100%;
+    margin-block: 30px;
+    overflow: hidden;
+    background:white
+    
+}
+
+
+.Container-Three-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:110px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.NewsLetter-Header {
+    width: 800px;
+ 
+}
+
+.NewsLetter-Header h1 {
+    font-size: 28px;
+}
+
+.Newsletter-Sign-Up {
+    width: 990px;
+}
+
+
+
+.Table-Container {
+    overflow: hidden;
+    width: 100%;
+    display: none;
+    z-index: 99;
+    text-align: center;
+    
+}
+
+.Table-Wrapper {
+    position: absolute;
+    top:60px;
+    left:0px;
+    border: 3px solid #ddd;
+    width: 100%;
+    z-index: 99;
+       
+}
+
+th, td {
+    padding:1.1em;
+  }
+
+
+
+
+ 
+
+.Footer-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin:0 auto;
+}
+
+
+.Footer-Copyright {
+    margin-left: 0px;
+}
+
+
+
+    
+}
+ 
+
+
+
+
+
+
+
+
+/*-------------------------------------------MOBILE---------------------------------------------------------*/
+
+@media screen and (max-width:480px) {
+
+    .Weekly-Meal-Container {
+            display: none;
+        }
+
+
+.Content-Child-Flex {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: none !important;
+    transform: none !important;
+}
+
+.Content-Child-Flex img {
+    object-fit: contain;
+    width: 190px;
+    height: 85px;
+}
+
+
+.Container-Two-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    max-width: 1200px;
+    margin:0 auto;
+    margin-top: -90px;
+}
+
+
+.BIO-Image-Wrapper {
+    align-self:flex;
+    margin-left: -215px;
+}
+
+
+.BIO {
+    margin-top: -200px;
+    margin-left: 20px;
+    width:450px;
+    text-align: left;
+    
+}
+
+
+.BIO > div {
+    font-size: 15px;
+}
+
+.BIO > div > ul > li {
+    margin: 30px 0px;
+}
+
+
+
+
+.Form {
+    align-self:flex-start;
+    background: linear-gradient(slategrey, dodgerblue, black);
+    border-radius:10px;
+    height: 420px;
+    width:510px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+   
+}
+
+.Client-Container {
+    margin-top: -85px;
+}
+
+
+.Client-Wrapper {
+    font-size: 18px;
+}
+
+.Client-Review-Wrapper .Client-Reviews {
+    font-size: 13px;
+}
+
+.Container-Four {
+    margin-block: -27px;
+}
+
+.Client-Feedback-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-block: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.Client-Review-Section {
+    width: 310px;
+    font-family: 'Times New Roman', Times, serif;
+    color:slategrey;
+    font-size: 18px;
+
+}
+
+
+.Container-Three {
+    display: none;
+}
+
+
+.NewsLetter-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:30px;
+    margin:0 auto;
+    max-width: 1000px;
+    padding:4em
+
+}
+
+
+
+.Newsletter-Sign-Up {
+    margin-top: 45px;
+    margin-left: 155px;
+
+}
+
+.NewsLetter-Header {
+    width: 460px;
+}
+
+.Newsletter-Sign-Up {
+    width: 550px;
+}
+ 
+
+
+
+.Container-Four .NewsLetter-Wrapper .NewsLetter-Header {
+    color:white;
+    font-size: 0.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.NewsLetter-Wrapper .NewsLetter-Header h1 {
+    font-size: 21px;
+}
+
+.NewsLetter-Header p {
+    color:slategrey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.Newsletter-Sign-Up input {
+    padding:1.3em 1em;
+    border:none;
+    outline:none;
+    background:darkgrey;
+    border-radius:15px;
+    color:white;
+    font-size: 1rem;
+}
+
+.Newsletter-Sign-Up button {
+    padding: 2em 2em;
+    border:none;
+    outline: none;
+    border-radius:20px;
+    cursor: pointer;
+    background-color:whitesmoke;
+    color:black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.Client-Name-Wrapper > div {
+    margin-left: 20px;
+}
+
+.Client-Company-Wrapper > div {
+    margin-left: 20px;
+
+}
+
+
+
+.Footer-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin:0 auto;
+}
+
+.Footer-Wrapper-Two .Footer-Content {
+    font-size: 0.6rem;
+}
+
+
+.Footer-Copyright {
+    margin-left: 0px;
+}
+
+.Footer-Social-Media {
+    margin-right: 10px;
+}
+
+
+.Cookie-Banner {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right:0;
+    left:0;
+    background-color:black;
+    color:white;
+    border-radius:20px;
+    padding:3px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+
+  .Cookie-Banner {
+    width: 450px;
+    
+  }
+
+
+
+
+
+    }
