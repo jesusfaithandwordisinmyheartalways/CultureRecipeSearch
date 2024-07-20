@@ -85,11 +85,11 @@
             </div>
 
                 <div class="Content-Child-Flex"> 
-                     <div class="content"><img src="/images/readers-digest-logo.jpg"></div>
-                    <div class="content"> <img src="/images/healthlinelogo.png"> </div>
-                    <div class="content"> <img src="/images/NewYorkMagazineLogo.png"> </div>
-                    <div class="content"> <img src="/images/womenshealthlogo.png">  </div>
-                    <div class="content">  <img src="/images/popsugarlogo.png"> </div>
+                     <div class="content"><img src="/images/readers-digest-logo.jpg" alt=""></div>
+                    <div class="content"> <img src="/images/healthlinelogo.png" alt=""> </div>
+                    <div class="content"> <img src="/images/NewYorkMagazineLogo.png" alt=""> </div>
+                    <div class="content"> <img src="/images/womenshealthlogo.png" alt="">  </div>
+                    <div class="content">  <img src="/images/popsugarlogo.png" alt=""> </div>
                 </div>
 
 
@@ -131,32 +131,33 @@
 
 
         <div class="Form">
-            <form onsubmit="submitForm(event)" id="formSignUp" name="formLogin">
+            <form id="formSignUp" name="formLogin">
                 <h1>Gain Access</h1>
                 <label>Username:</label><br><br>
-                <input oninput="Username()" type="password" class="username" id="username" name="userLogin" placeholder="Username" autocomplete="off" required><br><br>
+                <input onchange="UserName()"  type="password" class="username" id="username" name="userLogin" placeholder="Username" aria-label="username" autocomplete="off"><br><br>
                     <div class="Username-Error-Container" >
                         <div class="Username-Error-Wrapper" id="username-error-wrapper">
-                            <span class="username-error" id="username-error">Must Contain One Uppercase, One Special Character, Min 8 characters</span>
+                            <span class="username-error" id="username-error"></span>
                             
                         </div>
                     </div>
                 <label>Age:</label><br><br>
-                <input oninput="UserAgeData()" type="text" class="userage" id="userAge" placeholder="Age" autocomplete="off" required><br><br>
+                <input onchange="UserAge()" type="text" class="userage" id="userAge" placeholder="Age" aria-label="userage" autocomplete="off"><br><br>
                         <div class="UserAge-Error-Container" id="user-age-error-container">
                             <div class="UserAge-Error-Wrapper">
                                 <span class="user-age-error" id="user-age-error"></span>
                             </div>
                         </div>
                 <label>Email:</label><br><br>
-                <input oninput="UserEmailData()" type="email" class="user-email" id="user-email" placeholder="Email" autocomplete="off" required><br><br>
+                <input onchange="UserEmail()"  type="email" class="user-email" id="user-email" placeholder="Email" aria-label="useremail" autocomplete="off"><br><br>
                         <div class="UserEmail-Error-Container" id="user-email-error-container">
                             <div class="UserEmail-Error-Wrapper">
                                 <span class="user-email-error" id="user-email-error"></span>
                             </div>
                         </div>
+                                
 
-                             <button  type="submit" class="submit-btn">Submit</button>
+                             <button type="submit" class="submit-btn">Submit</button>
 
             </form>
 
@@ -176,7 +177,7 @@
     <div class="Cookie-Banner" id="cookie-banner">
         <div class="Cookie-Banner-Wrapper">
             <div class="cookie-image-container">
-                <img src="/images/cookiebannerimage.webp">
+                <img src="/images/cookiebannerimage.webp" alt="">
             </div>
             <h1 class="cookie-header-text">We Use Cookies</h1>
             <p>Our website uses cookies to enhance your experience. By using our site, you agree to our use of cookies.</p>
@@ -255,9 +256,9 @@
 
 
                 <div class="Client-Company-Wrapper">
-                    <div class="Client-Company"><img src="/images/womenshealthlogo.png"></div>
-                    <div class="Client-Company"><img src="/images/popsugarlogo.png"></div>
-                    <div class="Client-Company"><img src="/images/healthlinelogo.png"></div>
+                    <div class="Client-Company"><img src="/images/womenshealthlogo.png" alt=""></div>
+                    <div class="Client-Company"><img src="/images/popsugarlogo.png" alt=""></div>
+                    <div class="Client-Company"><img src="/images/healthlinelogo.png" alt=""></div>
 
 
 
@@ -411,7 +412,7 @@
 
     <div class="Recipe-Banner-Wrapper" id="recipe-banner-wrapper">
         <div class="recipe-banner-image">
-            <img src="/images/recipebanner.jpg" >
+            <img src="/images/recipebanner.jpg" alt="recipe-banner-image" >
         </div>
         <div class="recipe-important-bio">
             <h1>Why Recipes Are Important</h1>
@@ -432,7 +433,7 @@
 
     <div class="Nutrition-Banner-Wrapper" id="nutrition-banner-wrapper">
         <div class="nutrition-banner-image">
-            <img src="/images/nutritionbanner.jpg">
+            <img src="/images/nutritionbanner.jpg" alt="banner" >
         </div>
         <div class="nutrition-important-bio">
             <h1> Proper Nutrition</h1>
@@ -452,7 +453,7 @@
 
     <div class="MealPlan-Banner-Wrapper" id="mealplan-banner-wrapper">
         <div class="mealplan-banner-image">
-            <img class="image-three" src="/images/mealplanbanner.jpg">
+            <img class="image-three" src="/images/mealplanbanner.jpg" alt="meal-plan">
         </div>
         <div class="mealplan-important-bio">
             <h1>Meal Plan Outline</h1>
@@ -581,10 +582,10 @@
         </div>
 
         <div class="Footer-Social-Media">
-            <div><img src="/images/twitter.png">
-                <img src="/images/pintrest.png">
-                <img src="/images/instagraam.png">
-                <img src="/images/mete.png">
+            <div><img src="/images/twitter.png" alt="twitter">
+                <img src="/images/pintrest.png" alt="pintreat">
+                <img src="/images/instagraam.png" alt="instagram">
+                <img src="/images/mete.png" alt="meta">
         </div>
 
 
