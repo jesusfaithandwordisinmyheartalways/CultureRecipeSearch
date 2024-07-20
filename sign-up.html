@@ -142,14 +142,14 @@
                         </div>
                     </div>
                 <label>Age:</label><br><br>
-                <input onchange="UserAge()" type="text" class="userage" id="userAge" placeholder="Age" aria-label="userage" autocomplete="off"><br><br>
+                <input onchange="UserAge()" type="text" class="userage" id="userAge" placeholder="Age" aria-label="userAge" autocomplete="off"><br><br>
                         <div class="UserAge-Error-Container" id="user-age-error-container">
                             <div class="UserAge-Error-Wrapper">
                                 <span class="user-age-error" id="user-age-error"></span>
                             </div>
                         </div>
                 <label>Email:</label><br><br>
-                <input onchange="UserEmail()"  type="email" class="user-email" id="user-email" placeholder="Email" aria-label="useremail" autocomplete="off"><br><br>
+                <input onchange="UserEmail()"  type="email" class="user-email" id="user-email" placeholder="Email" aria-label="user-email" autocomplete="off"><br><br>
                         <div class="UserEmail-Error-Container" id="user-email-error-container">
                             <div class="UserEmail-Error-Wrapper">
                                 <span class="user-email-error" id="user-email-error"></span>
@@ -501,7 +501,7 @@
 
         <div class="Newsletter-Sign-Up">
           <form onsubmit="submitNewsLetter(event)">
-            <input type="email" class="newsletter-signup" id="newsletter-signup" placeholder="email@example.com">
+            <input type="email" class="newsletter-signup" id="newsletter-signup" placeholder="email@example.com" aria-label="email">
             <button onsubmit="submitNewsLetter(event)" type="submit">Submit</button><br><br>
                 <div class="Submit-Letter-Container" id="submit-letter-container">
                     <span class="submit-letter" id="submit-letter">Thanks for subscribing!</span><br>

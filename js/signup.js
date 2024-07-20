@@ -25,22 +25,23 @@ const cookieAttributes = {
 
 
 
+        
 
-        const UserName = () => {
+    const UserName = () => {
             const username = document.getElementById('username').value;
-        const userRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$/
-        if(!userRegex.test(username)) {
+         if(!/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$/.test(username)) {
             alert('Invalid username, Must Contain One Uppercase, One Special Character, Min 8 characters ')
-            return;
-        }
+            return false;
+            }
+            return true;
         }
 
 
         const UserAge = () => {
-            const userAge = document.getElementById('useAge').value;
-            if(userAge <= 0 || userAge >= 130) {
+            const userAge = document.getElementById('userAge').value;
+            if(userAge < 0 || userAge > 130) {
             alert('Invalid Age')
-            return;
+            return false;
           }
           return true;
 
@@ -50,20 +51,26 @@ const cookieAttributes = {
 
         const UserEmail = () => {
             const userEmail = document.getElementById('user-email').value;
-            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if(!emailRegex.test(userEmail)) {
+            
+            if(!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.com$/.test(userEmail)) {
                 alert('Invalid Email')
-                return;
+                return false;
             }
-            return true;
-          
+               return true;
         }
 
 
 
 
-    document.getElementById('formSignUp').addEventListener('submit', (event) => {
-             event.preventDefault();
+    document.getElementById('formSignUp').addEventListener('submit', (e) => {
+
+             e.preventDefault();
+
+
+             if (!UserName() || !UserAge() || !UserEmail()) {
+                alert('Invalid Login');
+                return;
+            }
           
 
             let submitUsername = document.getElementById('username').value;
@@ -85,20 +92,9 @@ const cookieAttributes = {
     })
 
    
-
-     
-
-
-
-
-
-
- /*-----------------------------------SET THE COOKIES -----------------------------------*/
-        function setCookie(name, value, expires) {
-            document.cookie = `${name}=${value};expires=${cookieAttributes.expires};path=${cookieAttributes.path};domain=${cookieAttributes.domain};SameSite=${cookieAttributes.sameSite}`;
-
-        }
-      
+    const setCookie = (name, value, expires) => {
+    document.cookie = `${name}=${value};expires=${expires};path=/;SameSite=Strict`;
+  }
 
         const AcceptCookies = () => {
             localStorage.setItem("cookiesAccepted", "true")
