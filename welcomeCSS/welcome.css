@@ -897,3 +897,201 @@ footer {
     object-fit: contain;
     width: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------MOBILE SCREEN ---------------------------------------------*/
+
+@media screen and (min-width:320px) and (max-width:420px) {
+
+    .Nav-Wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        margin:0 auto;
+        max-width:410px;
+        font-size: 0.9rem;
+    }
+
+
+    .Nav-Wrapper button {
+        text-decoration: none;
+        margin:0px 10px;
+        color:white;
+        font-weight:bold;
+        font-size: 0.8rem;
+        cursor: pointer;
+        padding:0.8em 1em;
+        border:none;
+        background:none;
+        outline:none
+    }
+
+    .Recipe-Input input {
+        font-size: 1rem;
+        padding:1em 1.3em;
+        border:none;
+        outline:none;
+        border-radius:10px;
+        text-align: center;
+        margin-top:90px
+    }
+
+
+    .Main-Wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        width: 550px;
+        text-align: center;
+        margin-top:-90px;
+        margin-left: -90px;
+        
+    }
+    
+    
+    .Asian-American-Italian-Recipe-Wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        flex-wrap: nowrap;
+        gap:0px;
+        width: 750px;
+        text-align: center;
+        margin-top:550px;
+
+
+    }
+    
+    
+    
+    
+    .Menu-Wrapper  {
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+       background-color:none;
+       width: 80px;
+       height: 1100px;
+       border-radius:3px;
+       visibility: hidden;
+    }
+
+
+    .Flex-Child-Image img {
+        object-fit: contain;
+        width:170px;
+        border-radius:10px;
+       
+    }
+
+    .Main-Wrapper-Two {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        max-width: 880px;
+        margin:0 auto;
+        padding:3em
+    }
+    
+    
+    .Overview-Recipes {
+        font-family: "Cormorant SC", serif;
+        color:gold;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .Container-Two {
+        overflow: hidden;
+        width: 100%;
+        background-color:black;
+        visibility: hidden;
+        margin-top: -510px;
+    }
+    
+    .Main-Wrapper-Two {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        max-width: 1000px;
+        height: 110px;
+        margin:0 auto;
+        font-size: 0.8rem;
+    }
+
+    
+
+
+
+    .What-Is-Recipe-Container {
+        width:100%;
+        overflow: hidden;
+        background-color:gold;
+        margin-top: -90px;
+        height: 1100px;
+        visibility: hidden;
+    }
+    
+
+
+.Recipe-Important-Wrapper  {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 0.8rem;
+   
+}
+
+.Recipe-Important img {
+    object-fit: contain;
+    width: 45px;
+}
+
+
+.Recipe-Important h1 {
+    font-family: "Cormorant SC", serif;
+    font-size: 1rem;
+}
+
+
+.Recipe-Important .Recipe-Important-Text {
+    width: 150px;
+    font-size: 0.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:black
+
+}
+
+.Recipe-Important h1 {
+    color:grey;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+     font-size: 1rem;
+}
+
+
+    
+    
+
+
+
+}
